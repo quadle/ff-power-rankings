@@ -1,0 +1,558 @@
+<!-- Late Night Handoffs — Week 1 power rankings scoreboard -->
+<title>Late Night Handoffs: Week 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0e13;
+    --bg-grid: #0e141b;
+    --surface: #131a22;
+    --surface-2: #1a2430;
+    --surface-3: #212c3a;
+    --border: rgba(233,238,243,0.09);
+    --border-strong: rgba(233,238,243,0.16);
+    --ink: #e9eef3;
+    --ink-dim: #93a3b3;
+    --ink-faint: #5c6b7a;
+    --gold: #f2b441;
+    --gold-ink: #2a1c05;
+    --gold-dim: rgba(242,180,65,0.14);
+    --gold-border: rgba(242,180,65,0.38);
+    --green: #3fb68a;
+    --green-dim: rgba(63,182,138,0.16);
+    --red: #f0553d;
+    --red-dim: rgba(240,85,61,0.16);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ background: var(--bg); }
+  body{
+    margin:0;
+    background: var(--bg);
+    background-image:
+      linear-gradient(var(--bg-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+    background-size: 100% 64px, 64px 100%;
+    background-position: 0 0;
+    color: var(--ink);
+    font-family: 'Karla', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-inline: 16px;
+    padding-block: 28px 56px;
+  }
+
+  .wrap{ max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+
+  h1,h2,h3{ text-wrap: balance; margin: 0; }
+
+  /* ---- scoreboard header ---- */
+  .scoreboard{
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .scoreboard .league{
+    font-family:'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .scoreboard .league span{ color: var(--gold); }
+  .scoreboard .meta{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.6;
+  }
+  .week-pill{
+    font-family:'Teko', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--gold-ink);
+    background: var(--gold);
+    padding: 3px 14px 1px;
+    border-radius: 6px;
+  }
+
+  .eyebrow{
+    font-family:'Teko', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::after{
+    content:"";
+    height:1px;
+    flex:1;
+    background: var(--border);
+  }
+
+  /* ---- spotlight cards ---- */
+  .spotlights{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 600px){ .spotlights{ grid-template-columns: 1fr; } }
+
+  .spotlight{
+    border-radius: 10px;
+    padding: 18px 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--tone, var(--gold));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .spotlight.best{ --tone: var(--gold); }
+  .spotlight.worst{ --tone: var(--red); }
+  .spotlight .tag{
+    font-family:'Teko', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--tone);
+  }
+  .spotlight .team{
+    font-family:'Teko', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.05;
+  }
+  .spotlight .owner{
+    font-size: 13px;
+    color: var(--ink-dim);
+    margin-top: -6px;
+  }
+  .spotlight .score-row{
+    display:flex; align-items:baseline; gap:8px;
+    font-family:'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  .spotlight .score-row .score{ font-size: 26px; font-weight: 700; color: var(--tone); }
+  .spotlight .score-row .record{ font-size: 12px; color: var(--ink-faint); }
+  .spotlight ul{ margin: 4px 0 0; padding-left: 18px; display:flex; flex-direction:column; gap:6px; }
+  .spotlight li{ font-size: 13.5px; line-height: 1.45; color: var(--ink); }
+  .spotlight li b{ color: var(--tone); font-weight: 700; }
+  .spotlight li .num{ font-family:'JetBrains Mono', monospace; }
+
+  /* ---- power rankings list ---- */
+  .rankings{ display:flex; flex-direction:column; gap:8px; }
+
+  .row{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .row-head{
+    all: unset;
+    display: grid;
+    grid-template-columns: 40px 54px 1fr auto auto 20px;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 10px 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .row-head:hover{ background: var(--surface-2); }
+  .row-head:focus-visible{ outline: 2px solid var(--gold); outline-offset: -2px; }
+
+  .rank-num{
+    font-family:'Teko', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--ink-faint);
+    line-height: 1;
+  }
+  .row[data-rank="1"] .rank-num{ color: var(--gold); }
+
+  .tick{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 5px;
+    text-align:center;
+    white-space: nowrap;
+  }
+  .tick.up{ color: var(--green); background: var(--green-dim); }
+  .tick.down{ color: var(--red); background: var(--red-dim); }
+
+  .team-block .team{ font-family:'Teko', sans-serif; font-size: 20px; font-weight: 600; line-height:1.1; }
+  .team-block .owner{ font-size: 11.5px; color: var(--ink-faint); }
+
+  .result{
+    font-family:'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    line-height: 1.15;
+  }
+  .result .pts{ font-size: 17px; font-weight: 700; }
+  .result .rec{ font-size: 10.5px; color: var(--ink-faint); }
+
+  .chev{
+    color: var(--ink-faint);
+    transition: transform 0.15s ease;
+    font-size: 13px;
+  }
+  .row.open .chev{ transform: rotate(90deg); }
+
+  @media (max-width: 560px){
+    .row-head{ grid-template-columns: 32px 46px 1fr auto 16px; }
+    .result .rec{ display:none; }
+  }
+
+  .row-body{
+    display: none;
+    padding: 4px 14px 16px;
+    border-top: 1px solid var(--border);
+  }
+  .row.open .row-body{ display: block; }
+
+  .blurb{
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-dim);
+    padding: 12px 0 14px;
+    border-bottom: 1px dashed var(--border);
+    margin-bottom: 10px;
+  }
+  .blurb b{ color: var(--ink); }
+
+  .lineup{ display:flex; flex-direction:column; gap:7px; }
+  .p-row{ display:grid; grid-template-columns: 96px 1fr 62px; align-items:center; gap:10px; }
+  .p-name{ font-size: 12.5px; color: var(--ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .p-name .pos{ color: var(--ink-faint); font-size: 10px; margin-right:4px; font-family:'JetBrains Mono',monospace; }
+  .p-bar-track{ position:relative; height: 12px; background: var(--surface-3); border-radius: 3px; }
+  .p-bar-fill{ position:absolute; top:0; left:0; height:100%; border-radius:3px; }
+  .p-bar-fill.beat{ background: var(--green); }
+  .p-bar-fill.missed{ background: var(--red); }
+  .p-tick{ position:absolute; top:-2px; width:2px; height:16px; background: var(--ink); opacity:0.55; }
+  .p-val{ font-family:'JetBrains Mono', monospace; font-size: 11.5px; text-align:right; font-variant-numeric: tabular-nums; }
+  .p-val .delta{ font-size:9.5px; display:block; }
+  .p-val .delta.beat{ color: var(--green); }
+  .p-val .delta.missed{ color: var(--red); }
+
+  .legend{ display:flex; gap:16px; font-size:10.5px; color:var(--ink-faint); align-items:center; margin-top:8px; }
+  .legend .sw{ display:inline-flex; align-items:center; gap:5px; }
+  .legend .dot{ width:8px; height:8px; border-radius:2px; display:inline-block; }
+
+  /* ---- standouts ---- */
+  .standouts-grid{ display:grid; grid-template-columns: 1.3fr 1fr; gap:14px; }
+  @media (max-width:600px){ .standouts-grid{ grid-template-columns: 1fr; } }
+
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px 18px;
+  }
+  .card h3{
+    font-family:'Teko', sans-serif; font-size:17px; font-weight:600;
+    letter-spacing:0.06em; text-transform:uppercase; color: var(--ink-dim);
+    margin-bottom: 12px;
+  }
+
+  .bar-list{ display:flex; flex-direction:column; gap:9px; }
+  .bar-item{ display:grid; grid-template-columns: 20px 96px 1fr 46px; align-items:center; gap:8px; }
+  .bar-item .rk{ font-family:'Teko',sans-serif; font-size:16px; color: var(--ink-faint); }
+  .bar-item .who{ font-size:12px; line-height:1.25; }
+  .bar-item .who .tm{ display:block; font-size:10px; color: var(--ink-faint); }
+  .bar-item .track{ height:10px; background: var(--surface-3); border-radius:3px; position:relative; }
+  .bar-item .fill{ position:absolute; left:0; top:0; height:100%; border-radius:3px; background: linear-gradient(90deg, #7a5417, var(--gold)); }
+  .bar-item .pts{ font-family:'JetBrains Mono',monospace; font-size:12px; text-align:right; font-variant-numeric: tabular-nums; }
+
+  .bust-list{ display:flex; flex-direction:column; gap:10px; }
+  .bust{ display:flex; justify-content:space-between; align-items:baseline; gap:8px; padding-bottom:9px; border-bottom:1px solid var(--border); }
+  .bust:last-child{ border-bottom:none; padding-bottom:0; }
+  .bust .who{ font-size:12.5px; }
+  .bust .who .tm{ display:block; font-size:10px; color: var(--ink-faint); }
+  .bust .nums{ font-family:'JetBrains Mono',monospace; font-size:11.5px; text-align:right; color: var(--red); white-space:nowrap; }
+  .bust .nums .proj{ display:block; color: var(--ink-faint); font-size:10px; }
+
+  footer{
+    text-align:center; font-size:11px; color: var(--ink-faint);
+    padding-top: 8px; line-height:1.6;
+  }
+  footer .dot-sep{ margin: 0 6px; }
+
+  @media (prefers-reduced-motion: reduce){ * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+  <div class="scoreboard">
+    <div class="league">LATE NIGHT <span>HANDOFFS</span></div>
+    <div class="meta">
+      <div><span class="week-pill">WK 1</span></div>
+      <div style="margin-top:6px">8 teams · 2-QB league</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="eyebrow">Spotlight</div>
+    <div class="spotlights" style="margin-top:14px">
+      <div class="spotlight best">
+        <div class="tag">🏆 Best team</div>
+        <div class="team">KingCountyKingz</div>
+        <div class="owner">mason</div>
+        <div class="score-row"><span class="score">200.72</span><span class="record">1–0 · league high</span></div>
+        <ul>
+          <li><b>Caleb Williams</b> dropped <span class="num">37.26</span> (proj 16.4) — the "extra" QB2 outscored every QB1 in the league.</li>
+          <li><b>Ashton Jeanty</b> went for <span class="num">32.70</span> (proj 17.9), exactly the workhorse profile he was drafted for.</li>
+          <li><b>Trey McBride</b> added <span class="num">24.50</span> — one of the "three tight ends nobody needed."</li>
+          <li>Survived a <b>Kyle Pitts</b> shutout (0.0) and a quiet DK Metcalf. Depth papered over both.</li>
+        </ul>
+      </div>
+      <div class="spotlight worst">
+        <div class="tag">💀 Worst team</div>
+        <div class="team">REPEAT</div>
+        <div class="owner">Jordan</div>
+        <div class="score-row"><span class="score">118.20</span><span class="record">0–1 · league low</span></div>
+        <ul>
+          <li><b>Lamar Jackson</b> (24.96) and <b>Justin Jefferson</b> (31.20) both hit — not their fault.</li>
+          <li><b>Bo Nix</b>, the QB2, delivered <span class="num">5.44</span> on a 16.1 projection.</li>
+          <li><b>Drake London</b> (5.5) and <b>Terry McLaurin</b> (3.4) both no-showed.</li>
+          <li><b>De'Von Achane</b> managed <span class="num">10.6</span> — the committee-role worry from the preseason showed up week 1.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Power rankings</div>
+    <div class="rankings" id="rankings" style="margin-top:14px"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Standouts</div>
+    <div class="standouts-grid" style="margin-top:14px">
+      <div class="card">
+        <h3>Top scores, league-wide</h3>
+        <div class="bar-list" id="topscores"></div>
+      </div>
+      <div class="card">
+        <h3>Biggest busts</h3>
+        <div class="bust-list">
+          <div class="bust"><div class="who">Ja'Marr Chase<span class="tm">Jamarrio cart</span></div><div class="nums">3.20<span class="proj">proj 19.95</span></div></div>
+          <div class="bust"><div class="who">Kyle Pitts Sr.<span class="tm">KingCountyKingz</span></div><div class="nums">0.00<span class="proj">proj 9.83</span></div></div>
+          <div class="bust"><div class="who">Colston Loveland<span class="tm">NE Legendarios</span></div><div class="nums">0.00<span class="proj">proj 12.03</span></div></div>
+          <div class="bust"><div class="who">Matthew Stafford<span class="tm">NE Legendarios</span></div><div class="nums">4.10<span class="proj">proj 17.50</span></div></div>
+          <div class="bust"><div class="who">Puka Nacua<span class="tm">NE Legendarios</span></div><div class="nums">12.40<span class="proj">proj 21.05</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Generated from live ESPN league data · Late Night Handoffs<span class="dot-sep">·</span>Week 1</footer>
+</div>
+
+<script>
+const TEAMS = [
+  {
+    rank:1, tick:7, team:"KingCountyKingz", owner:"mason", score:200.72, opp:"Let Him Cook", oppScore:188.88, record:"1–0", win:true,
+    blurb:"From presumptive last place to the top spot in one week. The “wasted TE spot” critique is on ice — for now.",
+    lineup:[
+      {n:"Jayden Daniels",p:"QB",a:17.66,j:16.84},{n:"CeeDee Lamb",p:"WR",a:15.4,j:17.26},
+      {n:"Ashton Jeanty",p:"RB",a:32.7,j:17.95},{n:"Trey McBride",p:"TE",a:24.5,j:14.34},
+      {n:"Travis Etienne Jr.",p:"RB",a:14.8,j:15.08},{n:"Chris Olave",p:"WR",a:28.2,j:14.78},
+      {n:"Caleb Williams",p:"QB",a:37.26,j:16.39},{n:"Rome Odunze",p:"WR",a:7.2,j:12.4},
+      {n:"Kyle Pitts Sr.",p:"FLEX",a:0.0,j:9.83},{n:"DK Metcalf",p:"FLEX",a:8.0,j:12.19},
+      {n:"Seahawks D/ST",p:"D/ST",a:14.0,j:7.22},{n:"Harrison Mevis",p:"K",a:1.0,j:9.41},
+    ]
+  },
+  {
+    rank:2, tick:1, team:"Love hurts", owner:"Alex", score:189.62, opp:"Jamarrio cart", oppScore:176.96, record:"1–0", win:true,
+    blurb:"Hurts, St. Brown, and Montgomery all hit. Boring, efficient, exactly what a preseason #3 should look like.",
+    lineup:[
+      {n:"Jalen Hurts",p:"QB",a:24.72,j:21.05},{n:"Amon-Ra St. Brown",p:"WR",a:28.7,j:18.82},
+      {n:"Jeremiyah Love",p:"FLEX",a:13.0,j:13.86},{n:"Dak Prescott",p:"QB",a:14.4,j:16.75},
+      {n:"Javonte Williams",p:"RB",a:24.2,j:15.29},{n:"Cam Skattebo",p:"FLEX",a:14.1,j:13.71},
+      {n:"Garrett Wilson",p:"WR",a:13.9,j:14.78},{n:"David Montgomery",p:"RB",a:28.9,j:12.67},
+      {n:"Michael Pittman Jr.",p:"WR",a:8.8,j:12.31},{n:"Cameron Dicker",p:"K",a:2.0,j:10.26},
+      {n:"Ravens D/ST",p:"D/ST",a:8.0,j:6.65},{n:"Mark Andrews",p:"TE",a:8.9,j:10.07},
+    ]
+  },
+  {
+    rank:3, tick:-1, team:"Serving Punt", owner:"Rachel", score:185.66, opp:"Poopa Yakuza", oppScore:162.7, record:"1–0", win:true,
+    blurb:"CMC was quiet (13.8) — bailed out entirely by the RB depth (Chase Brown, Bucky Irving) praised in the preseason. Depth beat stars this week.",
+    lineup:[
+      {n:"Bijan Robinson",p:"RB",a:31.3,j:18.9},{n:"Christian McCaffrey",p:"RB",a:13.8,j:18.52},
+      {n:"Joe Burrow",p:"QB",a:14.16,j:18.15},{n:"Chase Brown",p:"FLEX",a:18.8,j:16.03},
+      {n:"Brock Purdy",p:"QB",a:21.1,j:15.48},{n:"Zay Flowers",p:"WR",a:26.0,j:14.21},
+      {n:"Tee Higgins",p:"WR",a:8.9,j:12.96},{n:"Bucky Irving",p:"FLEX",a:20.3,j:13.5},
+      {n:"Luther Burden III",p:"WR",a:9.5,j:12.0},{n:"Sam LaPorta",p:"TE",a:9.8,j:10.95},
+      {n:"Cam Little",p:"K",a:12.0,j:8.81},{n:"Chargers D/ST",p:"D/ST",a:0.0,j:7.42},
+    ]
+  },
+  {
+    rank:4, tick:2, team:"Let Him Cook", owner:"Marshall", score:188.88, opp:"KingCountyKingz", oppScore:200.72, record:"0–1", win:false,
+    blurb:"2nd-highest score in the entire league — in a loss. Josh Allen and a shocking D'Andre Swift game weren't enough. Nothing wrong with this roster, just bad matchmaking.",
+    lineup:[
+      {n:"Josh Allen",p:"QB",a:35.66,j:19.32},{n:"Drake Maye",p:"QB",a:9.82,j:16.25},
+      {n:"James Cook III",p:"RB",a:9.9,j:15.88},{n:"Nico Collins",p:"WR",a:21.2,j:15.59},
+      {n:"DeVonta Smith",p:"FLEX",a:8.3,j:14.83},{n:"Ladd McConkey",p:"WR",a:19.2,j:13.74},
+      {n:"Breece Hall",p:"FLEX",a:19.8,j:16.5},{n:"D'Andre Swift",p:"RB",a:32.4,j:12.31},
+      {n:"Jameson Williams",p:"WR",a:8.5,j:12.12},{n:"Travis Kelce",p:"TE",a:10.1,j:9.81},
+      {n:"Ka'imi Fairbairn",p:"K",a:9.0,j:9.77},{n:"Eagles D/ST",p:"D/ST",a:5.0,j:6.14},
+    ]
+  },
+  {
+    rank:5, tick:2, team:"Jamarrio cart", owner:"g", score:176.96, opp:"Love hurts", oppScore:189.62, record:"0–1", win:false,
+    blurb:"Drafted the best WR trio in the league, and the WR1 gave you 3 points. Kenneth Walker, JSN, and Trevor Lawrence balled out anyway — bad beat, not a bad process.",
+    lineup:[
+      {n:"Ja'Marr Chase",p:"WR",a:3.2,j:19.95},{n:"Jaxon Smith-Njigba",p:"WR",a:26.2,j:18.98},
+      {n:"Kenneth Walker III",p:"FLEX",a:34.1,j:14.7},{n:"Trevor Lawrence",p:"QB",a:26.1,j:16.91},
+      {n:"Omarion Hampton",p:"RB",a:8.3,j:17.58},{n:"Justin Herbert",p:"QB",a:13.26,j:18.99},
+      {n:"Jaylen Waddle",p:"FLEX",a:1.2,j:12.24},{n:"Bhayshul Tuten",p:"RB",a:9.8,j:11.96},
+      {n:"Parker Washington",p:"WR",a:19.3,j:11.34},{n:"Tucker Kraft",p:"TE",a:9.5,j:8.97},
+      {n:"Harrison Butker",p:"K",a:7.0,j:8.51},{n:"Steelers D/ST",p:"D/ST",a:19.0,j:7.22},
+    ]
+  },
+  {
+    rank:6, tick:-5, team:"NE Legendarios", owner:"Erik", score:123.14, opp:"REPEAT", oppScore:118.2, record:"1–0", win:true,
+    blurb:"Preseason #1 overall — needed Dallas Goedert dropping a shocking 23.7 off the bench just to survive, after Puka, Stafford, and A.J. Brown all went quiet at once. Ugly win.",
+    lineup:[
+      {n:"Puka Nacua",p:"WR",a:12.4,j:21.05},{n:"Saquon Barkley",p:"RB",a:9.0,j:17.67},
+      {n:"Derrick Henry",p:"RB",a:35.3,j:16.36},{n:"A.J. Brown",p:"WR",a:5.6,j:14.18},
+      {n:"Matthew Stafford",p:"QB",a:4.1,j:17.5},{n:"Colston Loveland",p:"TE",a:0.0,j:12.03},
+      {n:"Davante Adams",p:"WR",a:5.6,j:13.82},{n:"Jadarian Price",p:"FLEX",a:7.8,j:14.1},
+      {n:"Baker Mayfield",p:"QB",a:11.64,j:16.28},{n:"Jason Myers",p:"K",a:7.0,j:9.38},
+      {n:"Rams D/ST",p:"D/ST",a:1.0,j:6.17},{n:"Dallas Goedert",p:"FLEX",a:23.7,j:10.93},
+    ]
+  },
+  {
+    rank:7, tick:-2, team:"Poopa Yakuza", owner:"Kit", score:162.7, opp:"Serving Punt", oppScore:185.66, record:"0–1", win:false,
+    blurb:"Called this WR room “solid, not spectacular” in the preseason — Rice, Pickens, and Egbuka combined for 27 points, less than Caleb Williams put up alone. Gibbs and Taylor did their job; nobody else showed up.",
+    lineup:[
+      {n:"Jahmyr Gibbs",p:"RB",a:33.6,j:22.43},{n:"Jonathan Taylor",p:"RB",a:25.1,j:17.75},
+      {n:"Rashee Rice",p:"WR",a:9.9,j:14.36},{n:"Jaxson Dart",p:"QB",a:26.6,j:18.52},
+      {n:"George Pickens",p:"WR",a:5.8,j:14.69},{n:"Emeka Egbuka",p:"WR",a:11.3,j:14.04},
+      {n:"Tyler Shough",p:"QB",a:23.2,j:14.21},{n:"Quinshon Judkins",p:"FLEX",a:7.0,j:13.15},
+      {n:"Harold Fannin Jr.",p:"TE",a:4.1,j:11.12},{n:"Rico Dowdle",p:"FLEX",a:4.1,j:12.5},
+      {n:"Broncos D/ST",p:"D/ST",a:2.0,j:5.86},{n:"Eddy Pineiro",p:"K",a:10.0,j:8.7},
+    ]
+  },
+  {
+    rank:8, tick:-4, team:"REPEAT", owner:"Jordan", score:118.2, opp:"NE Legendarios", oppScore:123.14, record:"0–1", win:false,
+    blurb:"Bo Nix in a 2-QB league is a real liability if he no-shows, and he no-showed. Lamar and Jefferson can't play every position at once.",
+    lineup:[
+      {n:"Lamar Jackson",p:"QB",a:24.96,j:19.13},{n:"Justin Jefferson",p:"WR",a:31.2,j:17.08},
+      {n:"De'Von Achane",p:"RB",a:10.6,j:18.2},{n:"Drake London",p:"WR",a:5.5,j:13.82},
+      {n:"Bo Nix",p:"QB",a:5.44,j:16.13},{n:"Kyren Williams",p:"RB",a:15.5,j:13.67},
+      {n:"Tetairoa McMillan",p:"WR",a:10.5,j:14.78},{n:"Tyler Warren",p:"TE",a:10.3,j:12.22},
+      {n:"Terry McLaurin",p:"FLEX",a:3.4,j:12.23},{n:"Brandon Aubrey",p:"K",a:2.0,j:9.93},
+      {n:"Texans D/ST",p:"D/ST",a:-4.0,j:5.25},{n:"Kenny Gainwell",p:"FLEX",a:2.8,j:12.03},
+    ]
+  },
+];
+
+const TOP_SCORERS = [
+  {n:"Caleb Williams",tm:"KingCountyKingz",pts:37.26},
+  {n:"Josh Allen",tm:"Let Him Cook",pts:35.66},
+  {n:"Derrick Henry",tm:"NE Legendarios",pts:35.30},
+  {n:"Kenneth Walker III",tm:"Jamarrio cart",pts:34.10},
+  {n:"Jahmyr Gibbs",tm:"Poopa Yakuza",pts:33.60},
+  {n:"Ashton Jeanty",tm:"KingCountyKingz",pts:32.70},
+  {n:"D'Andre Swift",tm:"Let Him Cook",pts:32.40},
+  {n:"Bijan Robinson",tm:"Serving Punt",pts:31.30},
+  {n:"Justin Jefferson",tm:"REPEAT",pts:31.20},
+];
+
+const BAR_MAX = 40;
+
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function renderRankings(){
+  const root = document.getElementById('rankings');
+  root.innerHTML = TEAMS.map(t => {
+    const up = t.tick > 0;
+    const flat = t.tick === 0;
+    const tickLabel = flat ? '— 0' : (up ? `▲ +${t.tick}` : `▼ ${t.tick}`);
+    const tickClass = flat ? '' : (up ? 'up' : 'down');
+    const lineupRows = t.lineup.map(pl => {
+      const beat = pl.a >= pl.j;
+      const deltaVal = (pl.a - pl.j);
+      const deltaStr = (deltaVal >= 0 ? '+' : '') + deltaVal.toFixed(1);
+      const fillPct = Math.min(100, (pl.a / BAR_MAX) * 100);
+      const tickPct = Math.min(100, (pl.j / BAR_MAX) * 100);
+      return `
+        <div class="p-row">
+          <div class="p-name"><span class="pos">${pl.p}</span>${escapeHtml(pl.n)}</div>
+          <div class="p-bar-track">
+            <div class="p-bar-fill ${beat?'beat':'missed'}" style="width:${fillPct}%"></div>
+            <div class="p-tick" style="left:${tickPct}%"></div>
+          </div>
+          <div class="p-val">${pl.a.toFixed(1)}<span class="delta ${beat?'beat':'missed'}">${deltaStr}</span></div>
+        </div>`;
+    }).join('');
+
+    return `
+    <div class="row" data-rank="${t.rank}">
+      <button class="row-head" aria-expanded="false">
+        <span class="rank-num">${t.rank}</span>
+        <span class="tick ${tickClass}">${tickLabel}</span>
+        <span class="team-block">
+          <span class="team">${escapeHtml(t.team)}</span>
+          <span class="owner">${escapeHtml(t.owner)} · ${t.win ? 'beat' : 'lost to'} ${escapeHtml(t.opp)}</span>
+        </span>
+        <span class="result"><span class="pts">${t.score.toFixed(2)}</span><span class="rec">${t.record}</span></span>
+        <span class="chev">&#9656;</span>
+      </button>
+      <div class="row-body">
+        <div class="blurb">${t.blurb}</div>
+        <div class="lineup">${lineupRows}</div>
+        <div class="legend">
+          <span class="sw"><span class="dot" style="background:var(--green)"></span>Beat projection</span>
+          <span class="sw"><span class="dot" style="background:var(--red)"></span>Missed projection</span>
+          <span class="sw"><span class="dot" style="background:var(--ink);opacity:.55;width:2px;border-radius:0;height:10px"></span>Projected pts</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  root.querySelectorAll('.row-head').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const row = btn.closest('.row');
+      const isOpen = row.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
+}
+
+function renderTopScores(){
+  const root = document.getElementById('topscores');
+  const max = TOP_SCORERS[0].pts;
+  root.innerHTML = TOP_SCORERS.map((s, i) => `
+    <div class="bar-item">
+      <div class="rk">${i+1}</div>
+      <div class="who">${escapeHtml(s.n)}<span class="tm">${escapeHtml(s.tm)}</span></div>
+      <div class="track"><div class="fill" style="width:${(s.pts/max*100).toFixed(1)}%"></div></div>
+      <div class="pts">${s.pts.toFixed(1)}</div>
+    </div>
+  `).join('');
+}
+
+renderRankings();
+renderTopScores();
+</script>
