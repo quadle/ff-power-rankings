@@ -1,0 +1,200 @@
+{
+  "week": 3,
+  "league_name": "Late Night Handoffs",
+  "spotlight": {
+    "best": "Serving Punt",
+    "worst": "NE Legendarios",
+    "best_bullets": [
+      "Bijan Robinson bounced back big: 35.30 on a 19.5 projection, after a quiet week 2.",
+      "Brock Purdy went off for the second week in a row — 31.28 off the bench, behind a 20.8 projection.",
+      "Joe Burrow (22.58) and Purdy combined for 53.86 points at QB alone.",
+      "Vikings D/ST (19.0) was the extra push in a 66-point blowout over NE Legendarios."
+    ],
+    "worst_bullets": [
+      "Saquon Barkley has now busted three straight weeks: 9.0, 3.0, and 9.0 on projections of 17+ every time.",
+      "Jadarian Price (1.2) and Xavier Worthy (4.0) were both dead weight at flex/WR.",
+      "Davante Adams (20.7) and Matthew Stafford (20.9) both hit — this offense works fine when Saquon isn't in it.",
+      "Blown out 192.96 to 126.94, the widest margin of the week."
+    ]
+  },
+  "top_scorers": [
+    {"name":"Jahmyr Gibbs","team":"Poopa Yakuza","pts":41.40},
+    {"name":"Jaxon Smith-Njigba","team":"Jamarrio cart","pts":35.36},
+    {"name":"Bijan Robinson","team":"Serving Punt","pts":35.30},
+    {"name":"Brock Purdy","team":"Serving Punt","pts":31.28},
+    {"name":"Drake London","team":"REPEAT","pts":28.40},
+    {"name":"Sam Darnold","team":"Poopa Yakuza","pts":27.66},
+    {"name":"Brock Bowers","team":"Love hurts","pts":27.60},
+    {"name":"Garrett Wilson","team":"Love hurts","pts":26.70},
+    {"name":"Ja'Marr Chase","team":"Jamarrio cart","pts":24.80}
+  ],
+  "busts": [
+    {"name":"De'Von Achane","team":"REPEAT","actual":1.70,"proj":19.42},
+    {"name":"Drake Maye","team":"Let Him Cook","actual":3.76,"proj":18.64},
+    {"name":"Justin Jefferson","team":"REPEAT","actual":5.20,"proj":18.26},
+    {"name":"Jonathan Taylor","team":"Poopa Yakuza","actual":9.20,"proj":20.62},
+    {"name":"Jadarian Price","team":"NE Legendarios","actual":1.20,"proj":12.08}
+  ],
+  "teams": {
+    "Love hurts": {
+      "owner":"Alex","score":169.06,"opp":"Let Him Cook","oppScore":127.32,"win":true,"record":"3-0",
+      "rank":1,"prevRank":1,
+      "positionTotals":{"QB":28.56,"RB":19.8,"WR":59.6,"TE":27.6,"FLEX":32.5,"Other":1.0},
+      "blurb":"Still undefeated, even with Hurts (12.62) and Amon-Ra (11.9) both having quiet weeks — Brock Bowers (27.6) and a Matthew Golden breakout (21.0 off waivers) covered every bit of it. This roster just keeps finding a new hero.",
+      "lineup":[
+        {"n":"Jalen Hurts","p":"QB","a":12.62,"j":19.8},
+        {"n":"Amon-Ra St. Brown","p":"WR","a":11.9,"j":19.86},
+        {"n":"Brock Bowers","p":"TE","a":27.6,"j":14.18},
+        {"n":"Javonte Williams","p":"FLEX","a":18.3,"j":15.05},
+        {"n":"Cam Skattebo","p":"RB","a":13.0,"j":14.02},
+        {"n":"Garrett Wilson","p":"WR","a":26.7,"j":16.09},
+        {"n":"David Montgomery","p":"RB","a":6.8,"j":12.01},
+        {"n":"Matthew Golden","p":"WR","a":21.0,"j":11.41},
+        {"n":"Patrick Mahomes","p":"QB","a":15.94,"j":19.63},
+        {"n":"Aaron Jones Sr.","p":"FLEX","a":14.2,"j":13.64},
+        {"n":"Bengals D/ST","p":"Other","a":0.0,"j":6.38},
+        {"n":"Trey Smack","p":"Other","a":1.0,"j":9.21}
+      ]
+    },
+    "Serving Punt": {
+      "owner":"Rachel","score":192.96,"opp":"NE Legendarios","oppScore":126.94,"win":true,"record":"2-1",
+      "rank":2,"prevRank":4,
+      "positionTotals":{"QB":53.86,"RB":56.9,"WR":35.1,"TE":7.4,"FLEX":16.7,"Other":23.0},
+      "blurb":"Best score of the week by a wide margin. Bijan bounced back, Brock Purdy is quietly QB2 of the year through three weeks, and this offense has zero cold spots right now.",
+      "lineup":[
+        {"n":"Bijan Robinson","p":"RB","a":35.3,"j":19.54},
+        {"n":"Christian McCaffrey","p":"RB","a":21.6,"j":20.9},
+        {"n":"Joe Burrow","p":"QB","a":22.58,"j":16.42},
+        {"n":"Chase Brown","p":"FLEX","a":8.9,"j":16.58},
+        {"n":"Brock Purdy","p":"QB","a":31.28,"j":20.81},
+        {"n":"Zay Flowers","p":"WR","a":15.4,"j":13.86},
+        {"n":"Bucky Irving","p":"FLEX","a":7.8,"j":15.78},
+        {"n":"Mike Evans","p":"WR","a":12.4,"j":12.48},
+        {"n":"Sam LaPorta","p":"TE","a":7.4,"j":11.19},
+        {"n":"Stefon Diggs","p":"WR","a":7.3,"j":10.81},
+        {"n":"Cam Little","p":"Other","a":4.0,"j":8.68},
+        {"n":"Vikings D/ST","p":"Other","a":19.0,"j":6.49}
+      ]
+    },
+    "Jamarrio cart": {
+      "owner":"g","score":178.18,"opp":"Poopa Yakuza","oppScore":173.56,"win":true,"record":"2-1",
+      "rank":3,"prevRank":3,
+      "positionTotals":{"QB":32.52,"RB":26.9,"WR":73.16,"TE":6.6,"FLEX":27.0,"Other":12.0},
+      "blurb":"JSN (35.36) and Chase (24.8) combined for 60 points again — the preseason WR-trio thesis is now three-for-three. Survived a 41-point Jahmyr Gibbs game from the other sideline to escape by less than 5.",
+      "lineup":[
+        {"n":"Ja'Marr Chase","p":"WR","a":24.8,"j":18.94},
+        {"n":"Jaxon Smith-Njigba","p":"WR","a":35.36,"j":20.83},
+        {"n":"Kenneth Walker III","p":"RB","a":21.3,"j":21.0},
+        {"n":"Trevor Lawrence","p":"QB","a":19.78,"j":17.47},
+        {"n":"Omarion Hampton","p":"RB","a":5.6,"j":15.01},
+        {"n":"Justin Herbert","p":"QB","a":12.74,"j":17.26},
+        {"n":"Jaylen Waddle","p":"FLEX","a":6.4,"j":13.09},
+        {"n":"Parker Washington","p":"WR","a":13.0,"j":15.01},
+        {"n":"Jaylen Warren","p":"FLEX","a":20.6,"j":15.76},
+        {"n":"Tucker Kraft","p":"TE","a":6.6,"j":10.27},
+        {"n":"Harrison Butker","p":"Other","a":5.0,"j":9.05},
+        {"n":"Chiefs D/ST","p":"Other","a":7.0,"j":6.32}
+      ]
+    },
+    "Poopa Yakuza": {
+      "owner":"Kit","score":173.56,"opp":"Jamarrio cart","oppScore":178.18,"win":false,"record":"1-2",
+      "rank":4,"prevRank":5,
+      "positionTotals":{"QB":51.46,"RB":50.6,"WR":42.2,"TE":3.8,"FLEX":17.5,"Other":8.0},
+      "blurb":"Jahmyr Gibbs went for an absurd 41.40, Sam Darnold (a waiver-wire pickup) dropped 27.66, and it still wasn't enough — highest-scoring loss of the week by 20+ points. Nothing wrong with this roster that better injury luck wouldn't fix.",
+      "lineup":[
+        {"n":"Jahmyr Gibbs","p":"RB","a":41.4,"j":25.35},
+        {"n":"Jonathan Taylor","p":"RB","a":9.2,"j":20.62},
+        {"n":"Rashee Rice","p":"WR","a":15.8,"j":12.73},
+        {"n":"Malik Nabers","p":"FLEX","a":7.6,"j":14.43},
+        {"n":"George Pickens","p":"WR","a":15.2,"j":13.8},
+        {"n":"Emeka Egbuka","p":"WR","a":11.2,"j":12.37},
+        {"n":"Tyler Shough","p":"QB","a":23.8,"j":18.88},
+        {"n":"Quinshon Judkins","p":"FLEX","a":9.9,"j":13.72},
+        {"n":"Eddy Pineiro","p":"Other","a":8.0,"j":9.85},
+        {"n":"Dalton Kincaid","p":"TE","a":3.8,"j":11.62},
+        {"n":"49ers D/ST","p":"Other","a":0.0,"j":7.22},
+        {"n":"Sam Darnold","p":"QB","a":27.66,"j":15.82}
+      ]
+    },
+    "REPEAT": {
+      "owner":"Jordan","score":151.02,"opp":"KingCountyKingz","oppScore":135.62,"win":true,"record":"1-2",
+      "rank":5,"prevRank":7,
+      "positionTotals":{"QB":38.92,"RB":23.5,"WR":37.3,"TE":14.7,"FLEX":16.6,"Other":20.0},
+      "blurb":"First real signs of life: Drake London exploded for 28.4 and waiver pickup Jordan Love (18.48) outproduced what Lamar Jackson himself needed, even as Justin Jefferson (5.2) and De'Von Achane (1.7) both went ice cold.",
+      "lineup":[
+        {"n":"Lamar Jackson","p":"QB","a":20.44,"j":21.08},
+        {"n":"Justin Jefferson","p":"WR","a":5.2,"j":18.26},
+        {"n":"De'Von Achane","p":"RB","a":1.7,"j":19.42},
+        {"n":"Drake London","p":"WR","a":28.4,"j":15.39},
+        {"n":"Kyren Williams","p":"RB","a":21.8,"j":12.97},
+        {"n":"Tetairoa McMillan","p":"WR","a":3.7,"j":14.21},
+        {"n":"Tyler Warren","p":"TE","a":14.7,"j":12.32},
+        {"n":"Brandon Aubrey","p":"Other","a":10.0,"j":9.72},
+        {"n":"Texans D/ST","p":"Other","a":10.0,"j":6.43},
+        {"n":"Chuba Hubbard","p":"FLEX","a":15.0,"j":14.54},
+        {"n":"Khalil Shakir","p":"FLEX","a":1.6,"j":10.4},
+        {"n":"Jordan Love","p":"QB","a":18.48,"j":17.28}
+      ]
+    },
+    "KingCountyKingz": {
+      "owner":"mason","score":135.62,"opp":"REPEAT","oppScore":151.02,"win":false,"record":"1-2",
+      "rank":6,"prevRank":6,
+      "positionTotals":{"QB":25.72,"RB":21.3,"WR":47.3,"TE":16.5,"FLEX":4.8,"Other":20.0},
+      "blurb":"Both starting QBs — Jayden Daniels and Caleb Williams — were out of the lineup entirely this week. That's the real risk of a 2-QB build: when your room shares a bye week, there's nobody left to throw the ball.",
+      "lineup":[
+        {"n":"CeeDee Lamb","p":"WR","a":20.2,"j":17.31},
+        {"n":"Ashton Jeanty","p":"RB","a":12.3,"j":18.87},
+        {"n":"Trey McBride","p":"TE","a":16.5,"j":16.52},
+        {"n":"Travis Etienne Jr.","p":"RB","a":9.0,"j":11.94},
+        {"n":"Chris Olave","p":"WR","a":19.7,"j":17.75},
+        {"n":"Rome Odunze","p":"WR","a":7.4,"j":9.94},
+        {"n":"Kyle Pitts Sr.","p":"FLEX","a":1.5,"j":9.89},
+        {"n":"Seahawks D/ST","p":"Other","a":4.0,"j":7.32},
+        {"n":"Isaiah Likely","p":"FLEX","a":3.3,"j":12.25},
+        {"n":"Harrison Mevis","p":"Other","a":16.0,"j":8.31},
+        {"n":"C.J. Stroud","p":"QB","a":11.68,"j":16.09},
+        {"n":"Michael Penix Jr.","p":"QB","a":14.04,"j":14.14}
+      ]
+    },
+    "Let Him Cook": {
+      "owner":"Marshall","score":127.32,"opp":"Love hurts","oppScore":169.06,"win":false,"record":"1-2",
+      "rank":7,"prevRank":2,
+      "positionTotals":{"QB":21.22,"RB":27.9,"WR":37.0,"TE":13.9,"FLEX":23.3,"Other":4.0},
+      "blurb":"Drake Maye has now busted two straight weeks (8.0, then 3.76) behind an 18+ projection both times. Josh Allen alone can't carry a two-QB build when the QB2 spot is a black hole.",
+      "lineup":[
+        {"n":"Josh Allen","p":"QB","a":17.46,"j":23.55},
+        {"n":"Drake Maye","p":"QB","a":3.76,"j":18.64},
+        {"n":"James Cook III","p":"RB","a":19.4,"j":16.96},
+        {"n":"DeVonta Smith","p":"FLEX","a":12.5,"j":15.62},
+        {"n":"Ladd McConkey","p":"WR","a":10.6,"j":13.58},
+        {"n":"Breece Hall","p":"RB","a":8.5,"j":16.17},
+        {"n":"D'Andre Swift","p":"FLEX","a":10.8,"j":12.83},
+        {"n":"Christian Watson","p":"WR","a":22.6,"j":14.03},
+        {"n":"Travis Kelce","p":"TE","a":13.9,"j":12.68},
+        {"n":"Ka'imi Fairbairn","p":"Other","a":5.0,"j":9.28},
+        {"n":"Eagles D/ST","p":"Other","a":-1.0,"j":8.02},
+        {"n":"Jalen Coker","p":"WR","a":3.8,"j":13.78}
+      ]
+    },
+    "NE Legendarios": {
+      "owner":"Erik","score":126.94,"opp":"Serving Punt","oppScore":192.96,"win":false,"record":"1-2",
+      "rank":8,"prevRank":8,
+      "positionTotals":{"QB":34.54,"RB":30.9,"WR":32.3,"TE":7.1,"FLEX":8.1,"Other":14.0},
+      "blurb":"Saquon Barkley: 9.0, 3.0, 9.0. Three weeks, three busts, same story. Davante Adams and Stafford are doing their job — this offense just can't survive its own RB1 anymore.",
+      "lineup":[
+        {"n":"Saquon Barkley","p":"RB","a":9.0,"j":17.37},
+        {"n":"Derrick Henry","p":"RB","a":21.9,"j":17.78},
+        {"n":"Matthew Stafford","p":"QB","a":20.9,"j":15.73},
+        {"n":"Colston Loveland","p":"TE","a":7.1,"j":9.69},
+        {"n":"Davante Adams","p":"WR","a":20.7,"j":15.62},
+        {"n":"Jadarian Price","p":"FLEX","a":1.2,"j":12.08},
+        {"n":"Courtland Sutton","p":"WR","a":7.6,"j":10.94},
+        {"n":"Xavier Worthy","p":"WR","a":4.0,"j":11.42},
+        {"n":"Jason Myers","p":"Other","a":9.0,"j":9.44},
+        {"n":"Rams D/ST","p":"Other","a":5.0,"j":5.38},
+        {"n":"Bryce Young","p":"QB","a":13.64,"j":16.75},
+        {"n":"Devaughn Vele","p":"FLEX","a":6.9,"j":11.51}
+      ]
+    }
+  }
+}
