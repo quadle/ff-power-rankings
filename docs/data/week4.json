@@ -1,0 +1,200 @@
+{
+  "week": 4,
+  "league_name": "Late Night Handoffs",
+  "spotlight": {
+    "best": "REPEAT",
+    "worst": "Poopa Yakuza",
+    "best_bullets": [
+      "Tetairoa McMillan went for 45.20 (proj 15.9) — the biggest individual score of the season, from a WR who put up 3.7 a week ago.",
+      "Kyren Williams (36.70) and Chuba Hubbard (25.90) combined for 62.6 points at RB — the backfield depth finally paid off.",
+      "George Kittle (17.0) and Khalil Shakir (13.2) added real production in the flex spots.",
+      "215.36 is the highest team score of the season, and it came at the expense of previously undefeated Love hurts."
+    ],
+    "worst_bullets": [
+      "Rashee Rice posted a literal 0.00 on a 14.9 projection.",
+      "Emeka Egbuka (3.3) and George Pickens (9.5) — the whole WR room produced 12.8 points, less than CeeDee Lamb scored by himself (41.3).",
+      "Dalton Kincaid (1.7) gave nothing at tight end, and Jahmyr Gibbs managed 17.7 on a 26.2 projection.",
+      "Jonathan Taylor (22.7) and Quinshon Judkins (21.6) were the only things working."
+    ]
+  },
+  "top_scorers": [
+    {"name":"Tetairoa McMillan","team":"REPEAT","pts":45.20},
+    {"name":"CeeDee Lamb","team":"KingCountyKingz","pts":41.30},
+    {"name":"Kyren Williams","team":"REPEAT","pts":36.70},
+    {"name":"Javonte Williams","team":"Love hurts","pts":31.30},
+    {"name":"Kenneth Walker III","team":"Jamarrio cart","pts":30.90},
+    {"name":"Nico Collins","team":"Let Him Cook","pts":30.80},
+    {"name":"Puka Nacua","team":"NE Legendarios","pts":27.70},
+    {"name":"Bijan Robinson","team":"Serving Punt","pts":27.70},
+    {"name":"Drake Maye","team":"Let Him Cook","pts":26.16}
+  ],
+  "busts": [
+    {"name":"Rashee Rice","team":"Poopa Yakuza","actual":0.00,"proj":14.90},
+    {"name":"Ja'Marr Chase","team":"Jamarrio cart","actual":5.70,"proj":20.43},
+    {"name":"Parker Washington","team":"Jamarrio cart","actual":2.00,"proj":15.34},
+    {"name":"Saquon Barkley","team":"NE Legendarios","actual":2.00,"proj":14.32},
+    {"name":"Garrett Wilson","team":"Love hurts","actual":5.70,"proj":16.47}
+  ],
+  "teams": {
+    "Serving Punt": {
+      "owner":"Rachel","score":205.54,"opp":"Jamarrio cart","oppScore":128.72,"win":true,"record":"3-1",
+      "rank":1,"prevRank":2,
+      "positionTotals":{"QB":43.34,"RB":43.7,"WR":46.9,"TE":22.4,"FLEX":25.2,"Other":24.0},
+      "blurb":"Best points-for in the league by nearly 80 points (759.5 through four weeks) and the only team that hasn't had a real cold spot all season. Zay Flowers (25.8) and Sam LaPorta (22.4) joined Bijan (27.7) on the highlight reel, and the win over Jamarrio cart was by 77.",
+      "lineup":[
+        {"n":"Bijan Robinson","p":"RB","a":27.7,"j":21.45},
+        {"n":"Christian McCaffrey","p":"RB","a":16.0,"j":20.26},
+        {"n":"Joe Burrow","p":"QB","a":23.72,"j":18.1},
+        {"n":"Chase Brown","p":"FLEX","a":19.1,"j":16.2},
+        {"n":"Brock Purdy","p":"QB","a":19.62,"j":18.74},
+        {"n":"Zay Flowers","p":"WR","a":25.8,"j":15.48},
+        {"n":"Bucky Irving","p":"FLEX","a":6.1,"j":15.93},
+        {"n":"Mike Evans","p":"WR","a":12.6,"j":11.8},
+        {"n":"Sam LaPorta","p":"TE","a":22.4,"j":11.18},
+        {"n":"Stefon Diggs","p":"WR","a":8.5,"j":12.8},
+        {"n":"Cam Little","p":"Other","a":14.0,"j":8.73},
+        {"n":"Vikings D/ST","p":"Other","a":10.0,"j":8.5}
+      ]
+    },
+    "REPEAT": {
+      "owner":"Jordan","score":215.36,"opp":"Love hurts","oppScore":165.8,"win":true,"record":"2-2",
+      "rank":2,"prevRank":5,
+      "positionTotals":{"QB":31.96,"RB":62.6,"WR":73.0,"TE":9.1,"FLEX":25.7,"Other":13.0},
+      "blurb":"From 0-2 to 2-2 in two weeks, capped by the highest team score of the season and the first loss for previously undefeated Love hurts. McMillan (45.2) and Kyren Williams (36.7) were the story, but the real tell is a roster that no longer lives or dies on two names.",
+      "lineup":[
+        {"n":"Lamar Jackson","p":"QB","a":18.88,"j":21.2},
+        {"n":"Drake London","p":"WR","a":14.6,"j":16.73},
+        {"n":"Kyren Williams","p":"RB","a":36.7,"j":13.09},
+        {"n":"Tetairoa McMillan","p":"WR","a":45.2,"j":15.85},
+        {"n":"Tyler Warren","p":"TE","a":9.1,"j":13.05},
+        {"n":"Brandon Aubrey","p":"Other","a":10.0,"j":9.55},
+        {"n":"George Kittle","p":"FLEX","a":17.0,"j":13.73},
+        {"n":"Texans D/ST","p":"Other","a":3.0,"j":4.85},
+        {"n":"Chuba Hubbard","p":"RB","a":25.9,"j":16.6},
+        {"n":"Khalil Shakir","p":"WR","a":13.2,"j":9.78},
+        {"n":"Jordan Love","p":"QB","a":13.08,"j":14.86},
+        {"n":"Braelon Allen","p":"FLEX","a":8.7,"j":12.74}
+      ]
+    },
+    "Love hurts": {
+      "owner":"Alex","score":165.8,"opp":"REPEAT","oppScore":215.36,"win":false,"record":"3-1",
+      "rank":3,"prevRank":1,
+      "positionTotals":{"QB":35.1,"RB":14.1,"WR":32.9,"TE":20.6,"FLEX":48.1,"Other":15.0},
+      "blurb":"First loss of the season, and a harsh one — 165.8 is the 4th-highest score of the week, it just ran into the biggest total of the year. Javonte Williams (31.3) and Brock Bowers (20.6) did their part, but Garrett Wilson (5.7), Cam Skattebo (7.6), and Jeremiyah Love (6.5) all went quiet at once.",
+      "lineup":[
+        {"n":"Amon-Ra St. Brown","p":"WR","a":15.5,"j":20.15},
+        {"n":"Jeremiyah Love","p":"RB","a":6.5,"j":15.55},
+        {"n":"Brock Bowers","p":"TE","a":20.6,"j":15.91},
+        {"n":"Dak Prescott","p":"QB","a":18.1,"j":17.27},
+        {"n":"Javonte Williams","p":"FLEX","a":31.3,"j":14.55},
+        {"n":"Cam Skattebo","p":"RB","a":7.6,"j":16.12},
+        {"n":"Garrett Wilson","p":"WR","a":5.7,"j":16.47},
+        {"n":"Matthew Golden","p":"WR","a":11.7,"j":12.89},
+        {"n":"Patrick Mahomes","p":"QB","a":17.0,"j":18.69},
+        {"n":"Aaron Jones Sr.","p":"FLEX","a":16.8,"j":18.02},
+        {"n":"Ravens D/ST","p":"Other","a":7.0,"j":6.59},
+        {"n":"Tyler Loop","p":"Other","a":8.0,"j":9.3}
+      ]
+    },
+    "KingCountyKingz": {
+      "owner":"mason","score":183.4,"opp":"Poopa Yakuza","oppScore":124.86,"win":true,"record":"2-2",
+      "rank":4,"prevRank":6,
+      "positionTotals":{"QB":35.8,"RB":25.8,"WR":63.6,"TE":10.1,"FLEX":30.1,"Other":18.0},
+      "blurb":"First win since week 1. CeeDee Lamb (41.3) and Chris Olave (19.6) turned the WR room into 63.6 points, and C.J. Stroud (23.08) is now the QB1 with Jayden Daniels and Caleb Williams still missing from the lineup for a second straight week.",
+      "lineup":[
+        {"n":"CeeDee Lamb","p":"WR","a":41.3,"j":16.9},
+        {"n":"Ashton Jeanty","p":"RB","a":18.6,"j":18.87},
+        {"n":"Trey McBride","p":"TE","a":10.1,"j":17.41},
+        {"n":"Chris Olave","p":"WR","a":19.6,"j":18.24},
+        {"n":"DJ Moore","p":"WR","a":2.7,"j":12.98},
+        {"n":"DK Metcalf","p":"FLEX","a":16.5,"j":10.08},
+        {"n":"Seahawks D/ST","p":"Other","a":12.0,"j":7.86},
+        {"n":"J.K. Dobbins","p":"RB","a":7.2,"j":10.08},
+        {"n":"Isaiah Likely","p":"FLEX","a":13.6,"j":11.74},
+        {"n":"Harrison Mevis","p":"Other","a":6.0,"j":8.54},
+        {"n":"C.J. Stroud","p":"QB","a":23.08,"j":16.82},
+        {"n":"Michael Penix Jr.","p":"QB","a":12.72,"j":14.74}
+      ]
+    },
+    "Let Him Cook": {
+      "owner":"Marshall","score":148.78,"opp":"NE Legendarios","oppScore":142.24,"win":true,"record":"2-2",
+      "rank":5,"prevRank":7,
+      "positionTotals":{"QB":44.68,"RB":23.7,"WR":38.5,"TE":3.5,"FLEX":20.4,"Other":18.0},
+      "blurb":"The Drake Maye problem fixed itself in the best way — 26.16 as the QB2, the best QB score of the week, plus Nico Collins (30.8). Won ugly by 6.5 with a tight end spot that gave 3.5 points and a kicker who scored 16.",
+      "lineup":[
+        {"n":"Josh Allen","p":"QB","a":18.52,"j":22.23},
+        {"n":"Drake Maye","p":"QB","a":26.16,"j":17.5},
+        {"n":"James Cook III","p":"RB","a":16.3,"j":17.41},
+        {"n":"Nico Collins","p":"WR","a":30.8,"j":15.3},
+        {"n":"Ladd McConkey","p":"WR","a":0.0,"j":11.75},
+        {"n":"D'Andre Swift","p":"RB","a":7.4,"j":14.66},
+        {"n":"Jameson Williams","p":"FLEX","a":16.2,"j":10.36},
+        {"n":"Christian Watson","p":"WR","a":7.7,"j":14.45},
+        {"n":"TreVeyon Henderson","p":"FLEX","a":4.2,"j":9.52},
+        {"n":"Travis Kelce","p":"TE","a":3.5,"j":11.79},
+        {"n":"Ka'imi Fairbairn","p":"Other","a":16.0,"j":9.9},
+        {"n":"Eagles D/ST","p":"Other","a":2.0,"j":4.02}
+      ]
+    },
+    "Jamarrio cart": {
+      "owner":"g","score":128.72,"opp":"Serving Punt","oppScore":205.54,"win":false,"record":"2-2",
+      "rank":6,"prevRank":3,
+      "positionTotals":{"QB":23.52,"RB":46.5,"WR":20.3,"TE":11.7,"FLEX":15.7,"Other":11.0},
+      "blurb":"The “best WR trio in the league” thesis took a brutal hit: Chase (5.7), JSN (12.6), and Parker Washington (2.0) combined for 20.3 points. Kenneth Walker (30.9) did what he could, but a 77-point loss says the WR-or-bust build has a bust mode.",
+      "lineup":[
+        {"n":"Ja'Marr Chase","p":"WR","a":5.7,"j":20.43},
+        {"n":"Jaxon Smith-Njigba","p":"WR","a":12.6,"j":21.86},
+        {"n":"Kenneth Walker III","p":"RB","a":30.9,"j":20.5},
+        {"n":"Trevor Lawrence","p":"QB","a":13.08,"j":18.49},
+        {"n":"Bhayshul Tuten","p":"FLEX","a":11.1,"j":12.67},
+        {"n":"Parker Washington","p":"WR","a":2.0,"j":15.34},
+        {"n":"Jaylen Warren","p":"RB","a":15.6,"j":16.95},
+        {"n":"Harrison Butker","p":"Other","a":6.0,"j":8.83},
+        {"n":"Josh Downs","p":"FLEX","a":4.6,"j":13.6},
+        {"n":"Harold Fannin Jr.","p":"TE","a":11.7,"j":11.11},
+        {"n":"Steelers D/ST","p":"Other","a":5.0,"j":8.19},
+        {"n":"Jacoby Brissett","p":"QB","a":10.44,"j":15.95}
+      ]
+    },
+    "NE Legendarios": {
+      "owner":"Erik","score":142.24,"opp":"Let Him Cook","oppScore":148.78,"win":false,"record":"1-3",
+      "rank":7,"prevRank":8,
+      "positionTotals":{"QB":32.94,"RB":17.9,"WR":36.3,"TE":11.7,"FLEX":30.4,"Other":13.0},
+      "blurb":"Saquon Barkley: 9.0, 3.0, 9.0, now 2.0. Four weeks, four busts. Puka (27.7) and Bryce Young (21.46) kept it within 7 points, but the RB1 problem is now the whole season.",
+      "lineup":[
+        {"n":"Puka Nacua","p":"WR","a":27.7,"j":18.07},
+        {"n":"Saquon Barkley","p":"RB","a":2.0,"j":14.32},
+        {"n":"Derrick Henry","p":"RB","a":15.9,"j":20.31},
+        {"n":"Colston Loveland","p":"TE","a":11.7,"j":8.66},
+        {"n":"Davante Adams","p":"WR","a":7.2,"j":15.63},
+        {"n":"Courtland Sutton","p":"WR","a":1.4,"j":10.53},
+        {"n":"Tony Pollard","p":"FLEX","a":13.0,"j":11.77},
+        {"n":"Jason Myers","p":"Other","a":6.0,"j":9.78},
+        {"n":"Rams D/ST","p":"Other","a":7.0,"j":6.18},
+        {"n":"Bryce Young","p":"QB","a":21.46,"j":20.2},
+        {"n":"Devaughn Vele","p":"FLEX","a":17.4,"j":10.63},
+        {"n":"Kyler Murray","p":"QB","a":11.48,"j":19.21}
+      ]
+    },
+    "Poopa Yakuza": {
+      "owner":"Kit","score":124.86,"opp":"KingCountyKingz","oppScore":183.4,"win":false,"record":"1-3",
+      "rank":8,"prevRank":4,
+      "positionTotals":{"QB":29.26,"RB":40.4,"WR":12.8,"TE":1.7,"FLEX":30.7,"Other":10.0},
+      "blurb":"Rashee Rice scored a literal 0.00, and Pickens (9.5) and Egbuka (3.3) didn't do much better — the WR room produced 12.8 points combined, less than CeeDee Lamb's 41.3 by himself. The “solid, not spectacular” preseason take has aged into “not solid.” Taylor (22.7) and Judkins (21.6) were the only things working.",
+      "lineup":[
+        {"n":"Jahmyr Gibbs","p":"RB","a":17.7,"j":26.15},
+        {"n":"Jonathan Taylor","p":"RB","a":22.7,"j":20.35},
+        {"n":"Rashee Rice","p":"WR","a":0.0,"j":14.9},
+        {"n":"George Pickens","p":"WR","a":9.5,"j":13.74},
+        {"n":"Emeka Egbuka","p":"WR","a":3.3,"j":11.2},
+        {"n":"Tyler Shough","p":"QB","a":15.94,"j":18.6},
+        {"n":"Quinshon Judkins","p":"FLEX","a":21.6,"j":12.47},
+        {"n":"Eddy Pineiro","p":"Other","a":5.0,"j":9.27},
+        {"n":"Dalton Kincaid","p":"TE","a":1.7,"j":10.7},
+        {"n":"49ers D/ST","p":"Other","a":5.0,"j":5.9},
+        {"n":"Sam Darnold","p":"QB","a":13.32,"j":16.99},
+        {"n":"Jordan Addison","p":"FLEX","a":9.1,"j":14.79}
+      ]
+    }
+  }
+}
