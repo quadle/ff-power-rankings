@@ -1,0 +1,630 @@
+{
+  "league_name": "Late Night Handoffs",
+  "week": 6,
+  "matchups": [
+    {
+      "home_team": "Let Him Cook",
+      "home_owner": "Marshall",
+      "home_score": 166.9,
+      "home_lineup": [
+        {
+          "name": "Josh Allen",
+          "pos": "QB",
+          "actual": 18.3,
+          "proj": 25.15
+        },
+        {
+          "name": "Drake Maye",
+          "pos": "QB",
+          "actual": 23.8,
+          "proj": 20.25
+        },
+        {
+          "name": "James Cook III",
+          "pos": "RB",
+          "actual": 24.3,
+          "proj": 19.31
+        },
+        {
+          "name": "Nico Collins",
+          "pos": "WR",
+          "actual": 10.9,
+          "proj": 16.94
+        },
+        {
+          "name": "DeVonta Smith",
+          "pos": "RB/WR/TE",
+          "actual": 20.5,
+          "proj": 13.5
+        },
+        {
+          "name": "Ladd McConkey",
+          "pos": "WR",
+          "actual": 2.7,
+          "proj": 10.42
+        },
+        {
+          "name": "D'Andre Swift",
+          "pos": "RB",
+          "actual": 23.0,
+          "proj": 15.0
+        },
+        {
+          "name": "Christian Watson",
+          "pos": "RB/WR/TE",
+          "actual": 9.4,
+          "proj": 16.33
+        },
+        {
+          "name": "Travis Kelce",
+          "pos": "TE",
+          "actual": 9.3,
+          "proj": 11.44
+        },
+        {
+          "name": "Ka'imi Fairbairn",
+          "pos": "K",
+          "actual": 11.0,
+          "proj": 8.34
+        },
+        {
+          "name": "Jalen Coker",
+          "pos": "WR",
+          "actual": 15.7,
+          "proj": 13.93
+        },
+        {
+          "name": "Jaguars D/ST",
+          "pos": "D/ST",
+          "actual": -2.0,
+          "proj": 5.59
+        }
+      ],
+      "away_team": "Jamarrio cart",
+      "away_owner": "g",
+      "away_score": 177.96,
+      "away_lineup": [
+        {
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "actual": 25.4,
+          "proj": 19.76
+        },
+        {
+          "name": "Kenneth Walker III",
+          "pos": "RB",
+          "actual": 27.9,
+          "proj": 23.31
+        },
+        {
+          "name": "Trevor Lawrence",
+          "pos": "QB",
+          "actual": 27.34,
+          "proj": 17.66
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "pos": "RB/WR/TE",
+          "actual": 24.7,
+          "proj": 12.64
+        },
+        {
+          "name": "Parker Washington",
+          "pos": "WR",
+          "actual": 10.4,
+          "proj": 15.4
+        },
+        {
+          "name": "Jaylen Warren",
+          "pos": "RB/WR/TE",
+          "actual": 9.8,
+          "proj": 14.98
+        },
+        {
+          "name": "Tucker Kraft",
+          "pos": "TE",
+          "actual": 8.7,
+          "proj": 12.11
+        },
+        {
+          "name": "Michael Wilson",
+          "pos": "WR",
+          "actual": 7.2,
+          "proj": 14.01
+        },
+        {
+          "name": "Jacoby Brissett",
+          "pos": "QB",
+          "actual": 6.92,
+          "proj": 15.2
+        },
+        {
+          "name": "Rhamondre Stevenson",
+          "pos": "RB",
+          "actual": 3.6,
+          "proj": 13.33
+        },
+        {
+          "name": "Chiefs D/ST",
+          "pos": "D/ST",
+          "actual": 14.0,
+          "proj": 7.26
+        },
+        {
+          "name": "Harrison Butker",
+          "pos": "K",
+          "actual": 12.0,
+          "proj": 9.55
+        }
+      ]
+    },
+    {
+      "home_team": "Poopa Yakuza",
+      "home_owner": "Kit",
+      "home_score": 179.06,
+      "home_lineup": [
+        {
+          "name": "Jonathan Taylor",
+          "pos": "RB",
+          "actual": 21.1,
+          "proj": 19.56
+        },
+        {
+          "name": "Malik Nabers",
+          "pos": "WR",
+          "actual": 28.5,
+          "proj": 17.36
+        },
+        {
+          "name": "George Pickens",
+          "pos": "WR",
+          "actual": 13.3,
+          "proj": 13.55
+        },
+        {
+          "name": "Emeka Egbuka",
+          "pos": "WR",
+          "actual": 17.8,
+          "proj": 10.98
+        },
+        {
+          "name": "Tyler Shough",
+          "pos": "QB",
+          "actual": 26.96,
+          "proj": 16.85
+        },
+        {
+          "name": "Emanuel Wilson",
+          "pos": "RB",
+          "actual": 5.2,
+          "proj": 14.87
+        },
+        {
+          "name": "Jayden Daniels",
+          "pos": "QB",
+          "actual": 21.0,
+          "proj": 19.94
+        },
+        {
+          "name": "Keenan Allen",
+          "pos": "RB/WR/TE",
+          "actual": 16.2,
+          "proj": 9.42
+        },
+        {
+          "name": "Spencer Shrader",
+          "pos": "K",
+          "actual": 9.0,
+          "proj": 10.99
+        },
+        {
+          "name": "Patriots D/ST",
+          "pos": "D/ST",
+          "actual": 5.0,
+          "proj": 6.78
+        },
+        {
+          "name": "Juwan Johnson",
+          "pos": "TE",
+          "actual": 0.0,
+          "proj": 10.79
+        },
+        {
+          "name": "Dameon Pierce",
+          "pos": "RB/WR/TE",
+          "actual": 15.0,
+          "proj": 12.34
+        }
+      ],
+      "away_team": "REPEAT",
+      "away_owner": "Jordan ",
+      "away_score": 115.32,
+      "away_lineup": [
+        {
+          "name": "Drake London",
+          "pos": "WR",
+          "actual": 12.2,
+          "proj": 15.76
+        },
+        {
+          "name": "Kyren Williams",
+          "pos": "RB",
+          "actual": 9.7,
+          "proj": 21.02
+        },
+        {
+          "name": "Tetairoa McMillan",
+          "pos": "WR",
+          "actual": 14.6,
+          "proj": 15.93
+        },
+        {
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "actual": 0.0,
+          "proj": 0.0
+        },
+        {
+          "name": "Terry McLaurin",
+          "pos": "WR",
+          "actual": 3.7,
+          "proj": 12.34
+        },
+        {
+          "name": "Brandon Aubrey",
+          "pos": "K",
+          "actual": 1.0,
+          "proj": 10.21
+        },
+        {
+          "name": "George Kittle",
+          "pos": "RB/WR/TE",
+          "actual": 17.9,
+          "proj": 14.91
+        },
+        {
+          "name": "Texans D/ST",
+          "pos": "D/ST",
+          "actual": -2.0,
+          "proj": 5.36
+        },
+        {
+          "name": "Chuba Hubbard",
+          "pos": "RB",
+          "actual": 19.1,
+          "proj": 14.76
+        },
+        {
+          "name": "Jordan Love",
+          "pos": "QB",
+          "actual": 20.24,
+          "proj": 20.9
+        },
+        {
+          "name": "Braelon Allen",
+          "pos": "RB/WR/TE",
+          "actual": 12.4,
+          "proj": 14.49
+        },
+        {
+          "name": "Jameis Winston",
+          "pos": "QB",
+          "actual": 6.48,
+          "proj": 17.78
+        }
+      ]
+    },
+    {
+      "home_team": "KingCountyKingz",
+      "home_owner": "mason",
+      "home_score": 183.18,
+      "home_lineup": [
+        {
+          "name": "CeeDee Lamb",
+          "pos": "WR",
+          "actual": 16.0,
+          "proj": 18.61
+        },
+        {
+          "name": "Ashton Jeanty",
+          "pos": "RB",
+          "actual": 15.8,
+          "proj": 19.17
+        },
+        {
+          "name": "Trey McBride",
+          "pos": "TE",
+          "actual": 12.3,
+          "proj": 17.09
+        },
+        {
+          "name": "Chris Olave",
+          "pos": "WR",
+          "actual": 14.3,
+          "proj": 17.28
+        },
+        {
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "actual": 6.9,
+          "proj": 10.35
+        },
+        {
+          "name": "DK Metcalf",
+          "pos": "RB/WR/TE",
+          "actual": 20.3,
+          "proj": 11.58
+        },
+        {
+          "name": "Seahawks D/ST",
+          "pos": "D/ST",
+          "actual": 6.0,
+          "proj": 6.05
+        },
+        {
+          "name": "J.K. Dobbins",
+          "pos": "RB",
+          "actual": 13.6,
+          "proj": 10.27
+        },
+        {
+          "name": "Isaiah Likely",
+          "pos": "RB/WR/TE",
+          "actual": 23.9,
+          "proj": 14.74
+        },
+        {
+          "name": "C.J. Stroud",
+          "pos": "QB",
+          "actual": 22.98,
+          "proj": 15.91
+        },
+        {
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "actual": 23.1,
+          "proj": 15.2
+        },
+        {
+          "name": "Dominic Zvada",
+          "pos": "K",
+          "actual": 8.0,
+          "proj": 10.91
+        }
+      ],
+      "away_team": "NE Legendarios",
+      "away_owner": "Erik",
+      "away_score": 112.82,
+      "away_lineup": [
+        {
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "actual": 14.0,
+          "proj": 22.78
+        },
+        {
+          "name": "Saquon Barkley",
+          "pos": "RB",
+          "actual": 0.0,
+          "proj": 0.0
+        },
+        {
+          "name": "Derrick Henry",
+          "pos": "RB",
+          "actual": 5.0,
+          "proj": 18.3
+        },
+        {
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "actual": 16.88,
+          "proj": 19.62
+        },
+        {
+          "name": "Davante Adams",
+          "pos": "WR",
+          "actual": 6.9,
+          "proj": 16.04
+        },
+        {
+          "name": "Tony Pollard",
+          "pos": "RB/WR/TE",
+          "actual": 7.6,
+          "proj": 14.22
+        },
+        {
+          "name": "Xavier Worthy",
+          "pos": "WR",
+          "actual": 14.3,
+          "proj": 11.06
+        },
+        {
+          "name": "Jason Myers",
+          "pos": "K",
+          "actual": 7.0,
+          "proj": 6.77
+        },
+        {
+          "name": "Rams D/ST",
+          "pos": "D/ST",
+          "actual": 2.0,
+          "proj": 7.26
+        },
+        {
+          "name": "Dallas Goedert",
+          "pos": "TE",
+          "actual": 12.1,
+          "proj": 10.11
+        },
+        {
+          "name": "Bryce Young",
+          "pos": "QB",
+          "actual": 19.84,
+          "proj": 18.21
+        },
+        {
+          "name": "Devaughn Vele",
+          "pos": "RB/WR/TE",
+          "actual": 7.2,
+          "proj": 11.18
+        }
+      ]
+    },
+    {
+      "home_team": "Serving Punt",
+      "home_owner": "Rachel",
+      "home_score": 169.18,
+      "home_lineup": [
+        {
+          "name": "Bijan Robinson",
+          "pos": "RB",
+          "actual": 7.3,
+          "proj": 22.99
+        },
+        {
+          "name": "Christian McCaffrey",
+          "pos": "RB",
+          "actual": 30.7,
+          "proj": 21.22
+        },
+        {
+          "name": "Brock Purdy",
+          "pos": "QB",
+          "actual": 17.36,
+          "proj": 21.38
+        },
+        {
+          "name": "Zay Flowers",
+          "pos": "RB/WR/TE",
+          "actual": 12.7,
+          "proj": 14.06
+        },
+        {
+          "name": "Bucky Irving",
+          "pos": "RB/WR/TE",
+          "actual": 6.9,
+          "proj": 16.06
+        },
+        {
+          "name": "Luther Burden III",
+          "pos": "WR",
+          "actual": 17.5,
+          "proj": 12.46
+        },
+        {
+          "name": "Mike Evans",
+          "pos": "WR",
+          "actual": 12.4,
+          "proj": 14.86
+        },
+        {
+          "name": "Stefon Diggs",
+          "pos": "WR",
+          "actual": 16.4,
+          "proj": 10.61
+        },
+        {
+          "name": "Cam Little",
+          "pos": "K",
+          "actual": 10.0,
+          "proj": 7.41
+        },
+        {
+          "name": "Kirk Cousins",
+          "pos": "QB",
+          "actual": 18.52,
+          "proj": 18.29
+        },
+        {
+          "name": "Brenton Strange",
+          "pos": "TE",
+          "actual": 9.4,
+          "proj": 9.82
+        },
+        {
+          "name": "Ravens D/ST",
+          "pos": "D/ST",
+          "actual": 10.0,
+          "proj": 7.12
+        }
+      ],
+      "away_team": "Love hurts",
+      "away_owner": "Alex",
+      "away_score": 143.3,
+      "away_lineup": [
+        {
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "actual": 11.0,
+          "proj": 19.77
+        },
+        {
+          "name": "Dak Prescott",
+          "pos": "QB",
+          "actual": 11.02,
+          "proj": 17.12
+        },
+        {
+          "name": "Javonte Williams",
+          "pos": "RB",
+          "actual": 13.0,
+          "proj": 16.89
+        },
+        {
+          "name": "Garrett Wilson",
+          "pos": "WR",
+          "actual": 8.4,
+          "proj": 14.8
+        },
+        {
+          "name": "Matthew Golden",
+          "pos": "RB/WR/TE",
+          "actual": 22.4,
+          "proj": 15.66
+        },
+        {
+          "name": "Patrick Mahomes",
+          "pos": "QB",
+          "actual": 10.48,
+          "proj": 18.77
+        },
+        {
+          "name": "Denzel Boston",
+          "pos": "WR",
+          "actual": 2.5,
+          "proj": 13.51
+        },
+        {
+          "name": "Tyler Loop",
+          "pos": "K",
+          "actual": 3.0,
+          "proj": 9.14
+        },
+        {
+          "name": "Germie Bernard",
+          "pos": "WR",
+          "actual": 25.7,
+          "proj": 9.89
+        },
+        {
+          "name": "Steelers D/ST",
+          "pos": "D/ST",
+          "actual": 11.0,
+          "proj": 6.95
+        },
+        {
+          "name": "Carnell Tate",
+          "pos": "RB/WR/TE",
+          "actual": 19.0,
+          "proj": 10.86
+        },
+        {
+          "name": "Tyler Allgeier",
+          "pos": "RB",
+          "actual": 5.8,
+          "proj": 12.35
+        }
+      ]
+    }
+  ]
+}
