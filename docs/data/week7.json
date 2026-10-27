@@ -1,0 +1,200 @@
+{
+  "week": 7,
+  "league_name": "Late Night Handoffs",
+  "spotlight": {
+    "best": "Serving Punt",
+    "worst": "Love hurts",
+    "best_bullets": [
+      "Zay Flowers (27.70), Tee Higgins (26.80), and Luther Burden III (23.70) combined for 78.2 points at WR — up from 46.3 last week.",
+      "Joe Burrow's return produced 28.88 (proj 19.3), the best QB score of the week.",
+      "Bucky Irving added 24.00 at flex and Christian McCaffrey 22.00, even with Purdy (12.02), LaPorta (2.8), and a -3 from the Ravens D/ST.",
+      "203.90 is the best score of the week and the only 200+, and the 54.66-point win over REPEAT was the widest margin of the week."
+    ],
+    "worst_bullets": [
+      "Garrett Wilson (4.60 on 15.1), Germie Bernard (5.70 on 13.4), and Matthew Golden (9.90 on 16.9) were all quiet.",
+      "Aaron Rodgers managed 13.08 on a 19.5 projection at QB2, and the Jets D/ST scored 0.0.",
+      "Brock Bowers (13.3 on 18.5) and Woody Marks (9.1 on 14.0) also came up short.",
+      "Amon-Ra St. Brown (24.2), Dak Prescott (23.28), and Javonte Williams (21.5) all hit — and it still wasn't enough to beat a team that had been 1-5."
+    ]
+  },
+  "top_scorers": [
+    {"name":"Tony Pollard","team":"NE Legendarios","pts":36.50},
+    {"name":"Jaxon Smith-Njigba","team":"Jamarrio cart","pts":31.30},
+    {"name":"Joe Burrow","team":"Serving Punt","pts":28.88},
+    {"name":"Zay Flowers","team":"Serving Punt","pts":27.70},
+    {"name":"Drake Maye","team":"Let Him Cook","pts":27.44},
+    {"name":"Trey McBride","team":"KingCountyKingz","pts":27.10},
+    {"name":"Tee Higgins","team":"Serving Punt","pts":26.80},
+    {"name":"Bo Nix","team":"REPEAT","pts":26.18},
+    {"name":"Jameson Williams","team":"Let Him Cook","pts":26.10}
+  ],
+  "busts": [
+    {"name":"Nico Collins","team":"Let Him Cook","actual":2.60,"proj":16.68},
+    {"name":"Jalen Coker","team":"Let Him Cook","actual":1.90,"proj":15.42},
+    {"name":"Bryce Young","team":"NE Legendarios","actual":5.42,"proj":17.66},
+    {"name":"Derrick Henry","team":"NE Legendarios","actual":5.90,"proj":18.03},
+    {"name":"Isaiah Likely","team":"KingCountyKingz","actual":3.20,"proj":14.25}
+  ],
+  "teams": {
+    "Serving Punt": {
+      "owner":"Rachel","score":203.9,"opp":"REPEAT","oppScore":149.24,"win":true,"record":"6-1",
+      "rank":1,"prevRank":1,
+      "positionTotals":{"QB":40.9,"RB":39.2,"WR":78.2,"TE":2.8,"FLEX":33.8,"Other":9.0},
+      "blurb":"6-1 with the best points-for (1,326.2) and the fewest points against (1,054.8) in the league, and five straight wins. Flowers (27.7), Higgins (26.8), and Burden III (23.7) combined for 78.2 at WR, and Joe Burrow's return produced 28.88. Purdy (12.0), LaPorta (2.8), and a -3 from the Ravens D/ST barely mattered.",
+      "lineup":[
+        {"n":"Bijan Robinson","p":"RB","a":17.2,"j":21.11},
+        {"n":"Christian McCaffrey","p":"RB","a":22.0,"j":21.92},
+        {"n":"Joe Burrow","p":"QB","a":28.88,"j":19.31},
+        {"n":"Chase Brown","p":"FLEX","a":9.8,"j":14.74},
+        {"n":"Brock Purdy","p":"QB","a":12.02,"j":20.43},
+        {"n":"Zay Flowers","p":"WR","a":27.7,"j":15.23},
+        {"n":"Tee Higgins","p":"WR","a":26.8,"j":14.19},
+        {"n":"Bucky Irving","p":"FLEX","a":24.0,"j":14.11},
+        {"n":"Luther Burden III","p":"WR","a":23.7,"j":12.66},
+        {"n":"Sam LaPorta","p":"TE","a":2.8,"j":12.66},
+        {"n":"Ravens D/ST","p":"Other","a":-3.0,"j":4.9},
+        {"n":"Will Reichard","p":"Other","a":12.0,"j":11.55}
+      ]
+    },
+    "Jamarrio cart": {
+      "owner":"g","score":177.56,"opp":"KingCountyKingz","oppScore":161.64,"win":true,"record":"5-2",
+      "rank":2,"prevRank":2,
+      "positionTotals":{"QB":39.96,"RB":39.2,"WR":59.1,"TE":14.8,"FLEX":18.5,"Other":6.0},
+      "blurb":"5-2 and three straight wins. JSN (31.3) was the star, Rhamondre Stevenson (22.5) and Geno Smith (23.48) were the depth plays, and it won even with Kenneth Walker scoring 9.7 on a 19.1 projection and the kicker and defense combining for 6.0.",
+      "lineup":[
+        {"n":"Ja'Marr Chase","p":"WR","a":17.2,"j":21.79},
+        {"n":"Jaxon Smith-Njigba","p":"WR","a":31.3,"j":20.03},
+        {"n":"Kenneth Walker III","p":"FLEX","a":9.7,"j":19.1},
+        {"n":"Jaylen Waddle","p":"FLEX","a":8.8,"j":11.15},
+        {"n":"Jaylen Warren","p":"RB","a":16.7,"j":17.65},
+        {"n":"Tucker Kraft","p":"TE","a":14.8,"j":12.15},
+        {"n":"Michael Wilson","p":"WR","a":10.6,"j":12.33},
+        {"n":"Jacoby Brissett","p":"QB","a":16.48,"j":14.22},
+        {"n":"Rhamondre Stevenson","p":"RB","a":22.5,"j":11.55},
+        {"n":"Harrison Butker","p":"Other","a":3.0,"j":10.31},
+        {"n":"Geno Smith","p":"QB","a":23.48,"j":16.02},
+        {"n":"Broncos D/ST","p":"Other","a":3.0,"j":6.36}
+      ]
+    },
+    "Poopa Yakuza": {
+      "owner":"Kit","score":167.42,"opp":"Let Him Cook","oppScore":151.36,"win":true,"record":"4-3",
+      "rank":3,"prevRank":5,
+      "positionTotals":{"QB":34.22,"RB":36.3,"WR":40.5,"TE":1.7,"FLEX":40.7,"Other":14.0},
+      "blurb":"4-3 and three straight wins — from 1-3 to a winning record in three weeks. Quinshon Judkins (23.4) and Ollie Gordon II (17.3) combined for 40.7 at flex, Kirk Cousins (20.4) is a new face at QB, and Jonathan Taylor (19.0) and Nabers (18.1) were steady. The tight end spot (Juwan Johnson, 1.7) is still a hole.",
+      "lineup":[
+        {"n":"Jahmyr Gibbs","p":"RB","a":17.3,"j":26.0},
+        {"n":"Jonathan Taylor","p":"RB","a":19.0,"j":15.23},
+        {"n":"Malik Nabers","p":"WR","a":18.1,"j":17.69},
+        {"n":"George Pickens","p":"WR","a":15.7,"j":13.2},
+        {"n":"Tyler Shough","p":"QB","a":13.82,"j":15.3},
+        {"n":"Quinshon Judkins","p":"FLEX","a":23.4,"j":13.24},
+        {"n":"Ollie Gordon II","p":"FLEX","a":17.3,"j":11.81},
+        {"n":"Spencer Shrader","p":"Other","a":3.0,"j":9.67},
+        {"n":"Juwan Johnson","p":"TE","a":1.7,"j":8.65},
+        {"n":"Vikings D/ST","p":"Other","a":11.0,"j":8.13},
+        {"n":"Kirk Cousins","p":"QB","a":20.4,"j":16.39},
+        {"n":"Chris Godwin Jr.","p":"WR","a":6.7,"j":11.09}
+      ]
+    },
+    "KingCountyKingz": {
+      "owner":"mason","score":161.64,"opp":"Jamarrio cart","oppScore":177.56,"win":false,"record":"3-4",
+      "rank":4,"prevRank":4,
+      "positionTotals":{"QB":36.94,"RB":29.9,"WR":46.9,"TE":27.1,"FLEX":10.8,"Other":10.0},
+      "blurb":"Highest-scoring loser of the week (161.64) — higher than the 154.12 Erik won with. McBride (27.1), Lamb (24.4), and Jeanty (21.6) all hit, but the flex spots that produced 44.2 points last week fell to 10.8 (Likely 3.2, Metcalf 7.6) and the kicker scored 1.0.",
+      "lineup":[
+        {"n":"CeeDee Lamb","p":"WR","a":24.4,"j":18.53},
+        {"n":"Ashton Jeanty","p":"RB","a":21.6,"j":16.99},
+        {"n":"Trey McBride","p":"TE","a":27.1,"j":15.85},
+        {"n":"Chris Olave","p":"WR","a":11.6,"j":15.71},
+        {"n":"Rome Odunze","p":"WR","a":10.9,"j":10.22},
+        {"n":"DK Metcalf","p":"FLEX","a":7.6,"j":14.83},
+        {"n":"Seahawks D/ST","p":"Other","a":9.0,"j":4.76},
+        {"n":"J.K. Dobbins","p":"RB","a":8.3,"j":13.45},
+        {"n":"Isaiah Likely","p":"FLEX","a":3.2,"j":14.25},
+        {"n":"C.J. Stroud","p":"QB","a":16.52,"j":19.5},
+        {"n":"Michael Penix Jr.","p":"QB","a":20.42,"j":14.58},
+        {"n":"Dominic Zvada","p":"Other","a":1.0,"j":10.82}
+      ]
+    },
+    "Let Him Cook": {
+      "owner":"Marshall","score":151.36,"opp":"Poopa Yakuza","oppScore":167.42,"win":false,"record":"3-4",
+      "rank":5,"prevRank":3,
+      "positionTotals":{"QB":49.56,"RB":19.0,"WR":15.2,"TE":8.4,"FLEX":43.2,"Other":16.0},
+      "blurb":"Two straight losses, 3-4. Drake Maye (27.44) and Caleb Williams (22.12) combined for 49.56 at QB and Jameson Williams (26.1 at flex) was a surprise, but the three starting WRs (Collins 2.6, Watson 10.7, Coker 1.9) scored 15.2 combined and Breece Hall was a 0.0 on a 0.0 projection.",
+      "lineup":[
+        {"n":"Drake Maye","p":"QB","a":27.44,"j":20.59},
+        {"n":"Nico Collins","p":"WR","a":2.6,"j":16.68},
+        {"n":"Breece Hall","p":"RB","a":0.0,"j":0.0},
+        {"n":"D'Andre Swift","p":"RB","a":19.0,"j":16.28},
+        {"n":"Jameson Williams","p":"FLEX","a":26.1,"j":10.77},
+        {"n":"Christian Watson","p":"WR","a":10.7,"j":16.69},
+        {"n":"Travis Kelce","p":"TE","a":8.4,"j":10.08},
+        {"n":"Ka'imi Fairbairn","p":"Other","a":11.0,"j":11.26},
+        {"n":"Jalen Coker","p":"WR","a":1.9,"j":15.42},
+        {"n":"Blake Corum","p":"FLEX","a":17.1,"j":10.02},
+        {"n":"Caleb Williams","p":"QB","a":22.12,"j":17.59},
+        {"n":"Browns D/ST","p":"Other","a":5.0,"j":6.31}
+      ]
+    },
+    "NE Legendarios": {
+      "owner":"Erik","score":154.12,"opp":"Love hurts","oppScore":141.56,"win":true,"record":"2-5",
+      "rank":6,"prevRank":8,
+      "positionTotals":{"QB":22.92,"RB":42.4,"WR":33.7,"TE":9.8,"FLEX":36.3,"Other":9.0},
+      "blurb":"First win since week 1, snapping a five-game losing streak — and it was Tony Pollard's 36.5 that did it, the top score in the league. Loveland (19.9 at flex), Vele (16.4 at flex), and Puka (21.8) helped, and it survived Bryce Young (5.42) and Derrick Henry (5.9) at the same time. 2-5, but no longer alone at the bottom.",
+      "lineup":[
+        {"n":"Puka Nacua","p":"WR","a":21.8,"j":22.55},
+        {"n":"Derrick Henry","p":"RB","a":5.9,"j":18.03},
+        {"n":"A.J. Brown","p":"WR","a":7.8,"j":15.95},
+        {"n":"Matthew Stafford","p":"QB","a":17.5,"j":18.58},
+        {"n":"Colston Loveland","p":"FLEX","a":19.9,"j":11.53},
+        {"n":"Tony Pollard","p":"RB","a":36.5,"j":13.81},
+        {"n":"Xavier Worthy","p":"WR","a":4.1,"j":12.41},
+        {"n":"Jason Myers","p":"Other","a":8.0,"j":9.47},
+        {"n":"Rams D/ST","p":"Other","a":1.0,"j":4.27},
+        {"n":"Dallas Goedert","p":"TE","a":9.8,"j":11.34},
+        {"n":"Bryce Young","p":"QB","a":5.42,"j":17.66},
+        {"n":"Devaughn Vele","p":"FLEX","a":16.4,"j":10.28}
+      ]
+    },
+    "REPEAT": {
+      "owner":"Jordan","score":149.24,"opp":"Serving Punt","oppScore":203.9,"win":false,"record":"2-5",
+      "rank":7,"prevRank":7,
+      "positionTotals":{"QB":43.14,"RB":28.1,"WR":36.0,"TE":0.0,"FLEX":28.0,"Other":14.0},
+      "blurb":"Three straight losses, 2-5. Bo Nix (26.18) finally delivered at QB and Drake London (19.6) hit, but Justin Jefferson (8.4 on 18.5) and McMillan (8.0 on 15.8) stayed quiet, Tyler Warren was a 0.0 on a 0.0 projection for the second straight week, and the Texans D/ST scored 0. Lost by nearly 55.",
+      "lineup":[
+        {"n":"Justin Jefferson","p":"WR","a":8.4,"j":18.51},
+        {"n":"Drake London","p":"WR","a":19.6,"j":17.06},
+        {"n":"Bo Nix","p":"QB","a":26.18,"j":16.09},
+        {"n":"Kyren Williams","p":"RB","a":18.1,"j":19.68},
+        {"n":"Tetairoa McMillan","p":"WR","a":8.0,"j":15.81},
+        {"n":"Tyler Warren","p":"TE","a":0.0,"j":0.0},
+        {"n":"Brandon Aubrey","p":"Other","a":14.0,"j":8.15},
+        {"n":"George Kittle","p":"FLEX","a":14.8,"j":16.66},
+        {"n":"Texans D/ST","p":"Other","a":0.0,"j":7.17},
+        {"n":"Chuba Hubbard","p":"RB","a":10.0,"j":14.78},
+        {"n":"Jordan Love","p":"QB","a":16.96,"j":19.62},
+        {"n":"Alvin Kamara","p":"FLEX","a":13.2,"j":8.15}
+      ]
+    },
+    "Love hurts": {
+      "owner":"Alex","score":141.56,"opp":"NE Legendarios","oppScore":154.12,"win":false,"record":"3-4",
+      "rank":8,"prevRank":6,
+      "positionTotals":{"QB":36.36,"RB":30.6,"WR":34.5,"TE":13.3,"FLEX":19.8,"Other":7.0},
+      "blurb":"Four straight losses, 3-4, and the 3-0 start feels like a long time ago. Dak (23.28), Amon-Ra (24.2), and Javonte Williams (21.5) did their part, but Garrett Wilson (4.6), Germie Bernard (5.7), Matthew Golden (9.9), and Aaron Rodgers (13.08) were all quiet and the Jets D/ST scored 0. Lost to a team that had been 1-5.",
+      "lineup":[
+        {"n":"Amon-Ra St. Brown","p":"WR","a":24.2,"j":19.5},
+        {"n":"Brock Bowers","p":"TE","a":13.3,"j":18.46},
+        {"n":"Dak Prescott","p":"QB","a":23.28,"j":16.72},
+        {"n":"Javonte Williams","p":"RB","a":21.5,"j":16.83},
+        {"n":"Garrett Wilson","p":"WR","a":4.6,"j":15.14},
+        {"n":"Matthew Golden","p":"FLEX","a":9.9,"j":16.89},
+        {"n":"Tyler Loop","p":"Other","a":7.0,"j":8.56},
+        {"n":"Germie Bernard","p":"WR","a":5.7,"j":13.4},
+        {"n":"Carnell Tate","p":"FLEX","a":9.9,"j":11.09},
+        {"n":"Aaron Rodgers","p":"QB","a":13.08,"j":19.47},
+        {"n":"Jets D/ST","p":"Other","a":0.0,"j":7.16},
+        {"n":"Woody Marks","p":"RB","a":9.1,"j":14.0}
+      ]
+    }
+  }
+}
