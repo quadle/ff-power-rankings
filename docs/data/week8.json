@@ -1,0 +1,200 @@
+{
+  "week": 8,
+  "league_name": "Late Night Handoffs",
+  "spotlight": {
+    "best": "Jamarrio cart",
+    "worst": "KingCountyKingz",
+    "best_bullets": [
+      "Ja'Marr Chase went for 31.10 (proj 21.9) and Bhayshul Tuten added 29.90 at flex (proj 14.6).",
+      "Jaylen Warren (21.30) and Tucker Kraft (17.30) both beat their projections, and the Jaguars D/ST scored 21.0 on a 7.4 projection.",
+      "Parker Washington (3.6) and Kenneth Walker (12.4) were both quiet, and it didn't matter.",
+      "217.80 is the second-highest team score of the season, and the 89.54-point win over Love hurts was the widest margin of the week."
+    ],
+    "worst_bullets": [
+      "Michael Penix Jr. scored -1.90 on a 15.5 projection, and kicker Will Reichard scored 0.0 on 11.3.",
+      "The two flex spots (Kyle Pitts 2.6, DK Metcalf 1.4) combined for 4.0 points.",
+      "CeeDee Lamb (12.8 on 20.1) and Ashton Jeanty (10.3 on 16.8) both came up short.",
+      "Josh Jacobs (23.2), Trey McBride (20.2), and Sam Darnold (17.52) were the only real production, in a 77-point loss."
+    ]
+  },
+  "top_scorers": [
+    {"name":"Joe Burrow","team":"Serving Punt","pts":39.48},
+    {"name":"Tee Higgins","team":"Serving Punt","pts":37.50},
+    {"name":"Ja'Marr Chase","team":"Jamarrio cart","pts":31.10},
+    {"name":"Bhayshul Tuten","team":"Jamarrio cart","pts":29.90},
+    {"name":"Tony Pollard","team":"NE Legendarios","pts":28.70},
+    {"name":"Brock Bowers","team":"Love hurts","pts":28.20},
+    {"name":"Kirk Cousins","team":"Poopa Yakuza","pts":28.18},
+    {"name":"D'Andre Swift","team":"Let Him Cook","pts":27.90},
+    {"name":"Josh Allen","team":"Let Him Cook","pts":26.56}
+  ],
+  "busts": [
+    {"name":"Lamar Jackson","team":"REPEAT","actual":0.00,"proj":22.17},
+    {"name":"Zay Flowers","team":"Serving Punt","actual":0.00,"proj":20.14},
+    {"name":"Michael Penix Jr.","team":"KingCountyKingz","actual":-1.90,"proj":15.52},
+    {"name":"Drake London","team":"REPEAT","actual":1.80,"proj":17.93},
+    {"name":"Javonte Williams","team":"Love hurts","actual":6.70,"proj":20.11}
+  ],
+  "teams": {
+    "Serving Punt": {
+      "owner":"Rachel","score":190.62,"opp":"Poopa Yakuza","oppScore":149.06,"win":true,"record":"7-1",
+      "rank":1,"prevRank":1,
+      "positionTotals":{"QB":48.52,"RB":28.6,"WR":56.1,"TE":6.5,"FLEX":28.9,"Other":22.0},
+      "blurb":"7-1 and six straight wins. Joe Burrow (39.48) and Tee Higgins (37.5) were the stars — Higgins beat his projection by 22 — and it won by 41.6 even with Zay Flowers scoring a flat 0.0 and Bijan managing 7.6.",
+      "lineup":[
+        {"n":"Bijan Robinson","p":"RB","a":7.6,"j":20.06},
+        {"n":"Joe Burrow","p":"QB","a":39.48,"j":22.88},
+        {"n":"Chase Brown","p":"FLEX","a":16.1,"j":16.94},
+        {"n":"Zay Flowers","p":"WR","a":0.0,"j":20.14},
+        {"n":"Tee Higgins","p":"WR","a":37.5,"j":15.49},
+        {"n":"Bucky Irving","p":"RB","a":21.0,"j":17.04},
+        {"n":"Luther Burden III","p":"WR","a":18.6,"j":13.4},
+        {"n":"Sam LaPorta","p":"TE","a":6.5,"j":10.74},
+        {"n":"Jared Goff","p":"QB","a":9.04,"j":16.09},
+        {"n":"Stefon Diggs","p":"FLEX","a":12.8,"j":12.56},
+        {"n":"Cam Little","p":"Other","a":6.0,"j":9.01},
+        {"n":"Steelers D/ST","p":"Other","a":16.0,"j":8.0}
+      ]
+    },
+    "Jamarrio cart": {
+      "owner":"g","score":217.8,"opp":"Love hurts","oppScore":128.26,"win":true,"record":"6-2",
+      "rank":2,"prevRank":2,
+      "positionTotals":{"QB":37.4,"RB":33.7,"WR":58.5,"TE":17.3,"FLEX":41.9,"Other":29.0},
+      "blurb":"Best score of the week (217.8) and the second-highest team score of the season. Chase (31.1), Tuten (29.9 at flex), and a 21-point Jaguars D/ST drove an 89.5-point blowout, the widest margin of the week. Four straight wins, 6-2.",
+      "lineup":[
+        {"n":"Ja'Marr Chase","p":"WR","a":31.1,"j":21.9},
+        {"n":"Jaxon Smith-Njigba","p":"WR","a":23.8,"j":22.06},
+        {"n":"Kenneth Walker III","p":"RB","a":12.4,"j":19.85},
+        {"n":"Trevor Lawrence","p":"QB","a":19.4,"j":20.33},
+        {"n":"Bhayshul Tuten","p":"FLEX","a":29.9,"j":14.56},
+        {"n":"Parker Washington","p":"WR","a":3.6,"j":15.95},
+        {"n":"Jaylen Warren","p":"RB","a":21.3,"j":15.95},
+        {"n":"Tucker Kraft","p":"TE","a":17.3,"j":10.79},
+        {"n":"Rhamondre Stevenson","p":"FLEX","a":12.0,"j":15.72},
+        {"n":"Geno Smith","p":"QB","a":18.0,"j":18.46},
+        {"n":"Jaguars D/ST","p":"Other","a":21.0,"j":7.41},
+        {"n":"Chris Boswell","p":"Other","a":8.0,"j":10.43}
+      ]
+    },
+    "Let Him Cook": {
+      "owner":"Marshall","score":193.52,"opp":"KingCountyKingz","oppScore":116.42,"win":true,"record":"4-4",
+      "rank":3,"prevRank":5,
+      "positionTotals":{"QB":49.02,"RB":31.4,"WR":43.9,"TE":11.7,"FLEX":40.5,"Other":17.0},
+      "blurb":"Josh Allen (26.56) and Drake Maye (22.46) both started and combined for 49.02 at QB, D'Andre Swift (27.9 at flex) had his best game in weeks, and the kicker (Tyler Bass, 16.0) added a bonus. Won by 77 and got back to .500 at 4-4.",
+      "lineup":[
+        {"n":"Josh Allen","p":"QB","a":26.56,"j":23.7},
+        {"n":"Drake Maye","p":"QB","a":22.46,"j":22.07},
+        {"n":"James Cook III","p":"RB","a":18.1,"j":18.81},
+        {"n":"Ladd McConkey","p":"FLEX","a":12.6,"j":10.37},
+        {"n":"D'Andre Swift","p":"FLEX","a":27.9,"j":14.67},
+        {"n":"Jameson Williams","p":"WR","a":17.0,"j":11.1},
+        {"n":"Christian Watson","p":"WR","a":17.3,"j":14.56},
+        {"n":"Travis Kelce","p":"TE","a":11.7,"j":9.3},
+        {"n":"Jalen Coker","p":"WR","a":9.6,"j":14.53},
+        {"n":"Blake Corum","p":"RB","a":13.3,"j":11.51},
+        {"n":"Tyler Bass","p":"Other","a":16.0,"j":10.39},
+        {"n":"Broncos D/ST","p":"Other","a":1.0,"j":4.98}
+      ]
+    },
+    "Poopa Yakuza": {
+      "owner":"Kit","score":149.06,"opp":"Serving Punt","oppScore":190.62,"win":false,"record":"4-4",
+      "rank":4,"prevRank":3,
+      "positionTotals":{"QB":43.16,"RB":31.5,"WR":38.8,"TE":15.8,"FLEX":13.8,"Other":6.0},
+      "blurb":"Three-game winning streak snapped. Kirk Cousins (28.18), Jahmyr Gibbs (24.8), and Rashee Rice (18.3) were fine, but Jonathan Taylor (6.7), Pickens (6.8), and both flex spots (Judkins and Gordon, 6.9 each) missed and the kicker scored 1.0. T.J. Hockenson (15.8) finally gave the tight end spot a pulse.",
+      "lineup":[
+        {"n":"Jahmyr Gibbs","p":"RB","a":24.8,"j":24.59},
+        {"n":"Jonathan Taylor","p":"RB","a":6.7,"j":15.63},
+        {"n":"Rashee Rice","p":"WR","a":18.3,"j":12.65},
+        {"n":"George Pickens","p":"WR","a":6.8,"j":13.96},
+        {"n":"Quinshon Judkins","p":"FLEX","a":6.9,"j":11.23},
+        {"n":"Ollie Gordon II","p":"FLEX","a":6.9,"j":14.19},
+        {"n":"Jayden Daniels","p":"QB","a":14.98,"j":22.8},
+        {"n":"Keenan Allen","p":"WR","a":13.7,"j":9.11},
+        {"n":"Spencer Shrader","p":"Other","a":1.0,"j":10.16},
+        {"n":"Vikings D/ST","p":"Other","a":5.0,"j":4.46},
+        {"n":"Kirk Cousins","p":"QB","a":28.18,"j":16.65},
+        {"n":"T.J. Hockenson","p":"TE","a":15.8,"j":11.23}
+      ]
+    },
+    "NE Legendarios": {
+      "owner":"Erik","score":153.58,"opp":"REPEAT","oppScore":146.92,"win":true,"record":"3-5",
+      "rank":5,"prevRank":6,
+      "positionTotals":{"QB":28.18,"RB":42.7,"WR":38.6,"TE":7.2,"FLEX":23.9,"Other":13.0},
+      "blurb":"Second straight win and 3-5. Tony Pollard (28.7) and Puka Nacua (25.0) carried it, Saquon Barkley is back in the lineup (12.4 at flex), and it survived Matthew Stafford (8.28) and a 2-point kicker. Won by 6.66 over REPEAT.",
+      "lineup":[
+        {"n":"Puka Nacua","p":"WR","a":25.0,"j":22.8},
+        {"n":"Saquon Barkley","p":"FLEX","a":12.4,"j":14.03},
+        {"n":"Derrick Henry","p":"RB","a":14.0,"j":18.8},
+        {"n":"Matthew Stafford","p":"QB","a":8.28,"j":16.95},
+        {"n":"Colston Loveland","p":"FLEX","a":11.5,"j":11.75},
+        {"n":"Courtland Sutton","p":"WR","a":9.3,"j":9.58},
+        {"n":"Tony Pollard","p":"RB","a":28.7,"j":15.02},
+        {"n":"Xavier Worthy","p":"WR","a":4.3,"j":8.16},
+        {"n":"Jason Myers","p":"Other","a":2.0,"j":9.55},
+        {"n":"Rams D/ST","p":"Other","a":11.0,"j":7.64},
+        {"n":"Dallas Goedert","p":"TE","a":7.2,"j":10.97},
+        {"n":"Kyler Murray","p":"QB","a":19.9,"j":17.25}
+      ]
+    },
+    "REPEAT": {
+      "owner":"Jordan","score":146.92,"opp":"NE Legendarios","oppScore":153.58,"win":false,"record":"2-6",
+      "rank":6,"prevRank":7,
+      "positionTotals":{"QB":21.52,"RB":37.8,"WR":27.9,"TE":5.8,"FLEX":39.9,"Other":14.0},
+      "blurb":"Lamar Jackson scored a flat 0.0 on a 22.2 projection and Drake London managed 1.8, and it still lost by only 6.66. Hubbard (24.9), Braelon Allen (23.3 at flex), and Jordan Love (21.52) did the heavy lifting. Fourth straight loss, 2-6.",
+      "lineup":[
+        {"n":"Lamar Jackson","p":"QB","a":0.0,"j":22.17},
+        {"n":"Justin Jefferson","p":"WR","a":14.3,"j":17.88},
+        {"n":"Drake London","p":"WR","a":1.8,"j":17.93},
+        {"n":"Kyren Williams","p":"RB","a":12.9,"j":18.02},
+        {"n":"Tetairoa McMillan","p":"WR","a":11.8,"j":15.64},
+        {"n":"Tyler Warren","p":"TE","a":5.8,"j":11.34},
+        {"n":"Brandon Aubrey","p":"Other","a":12.0,"j":10.0},
+        {"n":"Chuba Hubbard","p":"RB","a":24.9,"j":15.26},
+        {"n":"Jordan Love","p":"QB","a":21.52,"j":17.07},
+        {"n":"Braelon Allen","p":"FLEX","a":23.3,"j":17.39},
+        {"n":"Bengals D/ST","p":"Other","a":2.0,"j":5.99},
+        {"n":"DeMario Douglas","p":"FLEX","a":16.6,"j":11.01}
+      ]
+    },
+    "Love hurts": {
+      "owner":"Alex","score":128.26,"opp":"Jamarrio cart","oppScore":217.8,"win":false,"record":"3-5",
+      "rank":7,"prevRank":8,
+      "positionTotals":{"QB":23.26,"RB":9.0,"WR":47.8,"TE":28.2,"FLEX":8.0,"Other":12.0},
+      "blurb":"Fifth straight loss, 3-5, and the RB room scored 9.0 combined (Jeremiyah Love 2.3, Javonte Williams 6.7). Brock Bowers (28.2) and Matthew Golden (20.9) were the bright spots, but Jacoby Brissett (3.46) at QB2 and Tre Tucker (0.0) at flex dragged it down. Lost by nearly 90.",
+      "lineup":[
+        {"n":"Amon-Ra St. Brown","p":"WR","a":12.6,"j":17.8},
+        {"n":"Jeremiyah Love","p":"RB","a":2.3,"j":11.56},
+        {"n":"Brock Bowers","p":"TE","a":28.2,"j":16.16},
+        {"n":"Dak Prescott","p":"QB","a":19.8,"j":19.53},
+        {"n":"Javonte Williams","p":"RB","a":6.7,"j":20.11},
+        {"n":"Garrett Wilson","p":"WR","a":14.3,"j":14.13},
+        {"n":"Matthew Golden","p":"WR","a":20.9,"j":15.09},
+        {"n":"Tyler Loop","p":"Other","a":3.0,"j":8.88},
+        {"n":"Germie Bernard","p":"FLEX","a":8.0,"j":10.77},
+        {"n":"Tre Tucker","p":"FLEX","a":0.0,"j":10.91},
+        {"n":"Patriots D/ST","p":"Other","a":9.0,"j":5.81},
+        {"n":"Jacoby Brissett","p":"QB","a":3.46,"j":15.56}
+      ]
+    },
+    "KingCountyKingz": {
+      "owner":"mason","score":116.42,"opp":"Let Him Cook","oppScore":193.52,"win":false,"record":"3-5",
+      "rank":8,"prevRank":4,
+      "positionTotals":{"QB":15.62,"RB":33.5,"WR":42.1,"TE":20.2,"FLEX":4.0,"Other":1.0},
+      "blurb":"Lowest score of the week. Michael Penix Jr. scored negative points (-1.9), the kicker scored 0.0, and the two flex spots (Pitts 2.6, Metcalf 1.4) combined for 4.0. Josh Jacobs (23.2) and McBride (20.2) were the only real production. Second straight loss, 3-5.",
+      "lineup":[
+        {"n":"CeeDee Lamb","p":"WR","a":12.8,"j":20.07},
+        {"n":"Ashton Jeanty","p":"RB","a":10.3,"j":16.84},
+        {"n":"Trey McBride","p":"TE","a":20.2,"j":17.67},
+        {"n":"Rome Odunze","p":"WR","a":12.7,"j":9.27},
+        {"n":"DJ Moore","p":"WR","a":16.6,"j":13.61},
+        {"n":"Kyle Pitts Sr.","p":"FLEX","a":2.6,"j":10.23},
+        {"n":"DK Metcalf","p":"FLEX","a":1.4,"j":12.2},
+        {"n":"Seahawks D/ST","p":"Other","a":1.0,"j":5.8},
+        {"n":"Josh Jacobs","p":"RB","a":23.2,"j":15.11},
+        {"n":"Michael Penix Jr.","p":"QB","a":-1.9,"j":15.52},
+        {"n":"Will Reichard","p":"Other","a":0.0,"j":11.25},
+        {"n":"Sam Darnold","p":"QB","a":17.52,"j":14.49}
+      ]
+    }
+  }
+}
